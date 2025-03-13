@@ -1,5 +1,5 @@
 // https://vitepress.dev/guide/custom-theme
-import { install } from '@panda-ui/components'
+import { install } from '@simple-ui/components'
 import { globals } from '../vitepress'
 import Layout from '../vitepress/components/bl-app.vue'
 import './style.css'

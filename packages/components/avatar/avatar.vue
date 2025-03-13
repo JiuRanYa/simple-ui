@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { ComponentSize, StyleType } from '@panda-ui/common'
-import { useProps } from '@panda-ui/common'
-import { useNamespace } from '@panda-ui/hooks'
+import type { ComponentSize, StyleType } from '@simple-ui/common'
+import { useProps } from '@simple-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
 import { computed } from 'vue'
 import { Icon } from '../icon'
 import { avatarProps } from './props'

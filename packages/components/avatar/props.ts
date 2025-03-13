@@ -1,5 +1,5 @@
-import type { ComponentSize } from '@panda-ui/common'
-import { booleanProps, buildProps } from '@panda-ui/common'
+import type { ComponentSize } from '@simple-ui/common'
+import { booleanProps, buildProps } from '@simple-ui/common'
 import type { PropType } from 'vue'
 
 export const avatarProps = buildProps({
