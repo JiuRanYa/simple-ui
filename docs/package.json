@@ -1,8 +1,8 @@
 {
-  "name": "@panda-ui/docs",
+  "name": "@simple-ui/docs",
   "type": "module",
   "version": "1.0.1",
-  "description": "Panda UI docs",
+  "description": "Simple UI docs",
   "author": "Tong Siyuan",
   "license": "ISC",
   "keywords": [],

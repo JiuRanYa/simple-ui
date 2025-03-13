@@ -3,7 +3,7 @@ import path from 'node:path'
 import MarkdownIt from 'markdown-it'
 import mdContainer from 'markdown-it-container'
 import type Token from 'markdown-it/lib/token'
-import { docRoot } from '@panda-ui/internal'
+import { docRoot } from '@simple-ui/internal'
 import { highlight } from '../utils/highlight'
 
 const localMd = MarkdownIt()
@@ -21,7 +21,7 @@ export function markdownPlugin(md: MarkdownIt) {
       const sourceFileToken = tokens[idx + 2]
       // const mdPath = env.path
       // const project = mdPath.split('projects')[2].split('/')[1]
-      const project = 'panda-ui'
+      const project = 'simple-ui'
 
       if (!project)
         throw new Error(`Mark sure to put your md in projects path`)

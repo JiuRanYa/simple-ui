@@ -25,7 +25,7 @@ export default defineConfig(() => {
   return {
     optimizeDeps: {
       include: [
-        '@panda-ui/icons',
+        '@simple-ui/icons',
         ...Object.keys(pkg.dependencies).filter((dep: string) => !dep.includes('simple-ui')),
       ],
     },
@@ -49,7 +49,7 @@ export default defineConfig(() => {
               if (components.includes(kebabName)) {
                 return {
                   name,
-                  from: `@panda-ui/components/${kebabName}/index.ts`,
+                  from: `@simple-ui/components/${kebabName}/index.ts`,
                 }
               }
             },

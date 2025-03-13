@@ -1,5 +1,5 @@
 export const siderbarsConfig: SidebarsConfig = {
-  'panda-ui': {
+  'simple-ui': {
     guide: [
       {
         text: '指南',
