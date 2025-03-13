@@ -1,0 +1,40 @@
+{
+  "name": "@panda-ui/docs",
+  "type": "module",
+  "version": "1.0.1",
+  "description": "Panda UI docs",
+  "author": "Tong Siyuan",
+  "license": "ISC",
+  "keywords": [],
+  "scripts": {
+    "build": "vitepress build",
+    "build:vercel": "pnpm -C ../internal build && pnpm -C ../packages/icons build && pnpm -C .. build && vitepress build",
+    "docs:preview": "vitepress preview",
+    "serve": "vitepress dev .",
+    "plugin:dev": "pnpm run plugin:build --watch .vitepress/plugins",
+    "plugin:build": "tsup .vitepress/plugins/markdownTransform.ts --dts --format cjs,esm"
+  },
+  "dependencies": {
+    "@panda-ui/components": "workspace:*",
+    "@panda-ui/hooks": "workspace:*",
+    "@panda-ui/icons": "1.0.4",
+    "@panda-ui/internal": "workspace:*",
+    "@panda-ui/styles": "workspace:*",
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
+    "panda-ui": "workspace:^",
+    "sass": "^1.79.3",
+    "shiki": "^1.10.0",
+    "simplebar-vue": "^2.3.3",
+    "vitepress": "^1.2.3",
+    "vue-draggable-plus": "0.5.4",
+    "vuedraggable": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/markdown-it-container": "^2.0.5",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "tsup": "^6.7.0",
+    "unplugin-vue-components": "^0.24.1"
+  }
+}

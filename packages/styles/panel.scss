@@ -1,0 +1,21 @@
+@use 'sass:map';
+@use './shared' as *;
+@use './design' as *;
+
+$panel-map: () !default;
+$panel-map: map.merge((), $panel-map);
+
+.#{$namespace}-panel {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	position: relative;
+
+  @include basis;
+
+  &-vars {
+    @include define-preset-values('panel', $panel-map);
+  }
+
+}

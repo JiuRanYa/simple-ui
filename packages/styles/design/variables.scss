@@ -1,0 +1,345 @@
+@use 'sass:map';
+@use 'sass:color';
+@use 'sass:math';
+
+@use '../shared/mixins.scss' as *;
+
+$namespace: 'bl' !default;
+
+$types: primary, secondary, success, warning, error;
+
+$color-black: #000 !default;
+$color-white: #fff !default;
+
+$bg-color-map: () !default;
+$bg-color-map: map.merge(
+  (
+    base: rgb(255, 255, 255),
+    reverse: #131719
+  ),
+  $bg-color-map
+);
+
+$hsl-color-map: () !default;
+$hsl-color-map: map.deep-merge(
+	(
+    primary: (
+      base: (get-css-var(hsl-color-primary-base-h) get-css-var(hsl-color-primary-base-s) get-css-var(hsl-color-primary-base-l)),
+			base-h: 222,
+			base-s: 47%,
+			base-l: 11%,
+			foreground: 0 0% 98%,
+    ),
+    secondary: (
+      base: (get-css-var(hsl-color-secondary-base-h) get-css-var(hsl-color-secondary-base-s) get-css-var(hsl-color-secondary-base-l)),
+			base-h: 240,
+			base-s: 4.8%,
+			base-l: 94%,
+      foreground: (get-css-var(hsl-color-secondary-foreground-h) get-css-var(hsl-color-secondary-foreground-s) get-css-var(hsl-color-secondary-foreground-l)),
+			foreground-h: 222,
+			foreground-s: 47%,
+			foreground-l: 11%,
+    ),
+    success: (
+      base: (get-css-var(hsl-color-success-base-h) get-css-var(hsl-color-success-base-s) get-css-var(hsl-color-success-base-l)),
+			base-h: 114,
+			base-s: 57%,
+			base-l: 51%,
+      foreground: (get-css-var(hsl-color-success-foreground-h) get-css-var(hsl-color-success-foreground-s) get-css-var(hsl-color-success-foreground-l)),
+			foreground-h: 114,
+			foreground-s: 57%,
+			foreground-l: 51%,
+    ),
+    warning: (
+      base: (get-css-var(hsl-color-warning-base-h) get-css-var(hsl-color-warning-base-s) get-css-var(hsl-color-warning-base-l)),
+			base-h: 43,
+			base-s: 100%,
+			base-l: 65%,
+    ),
+    error: (
+      // base: 355 100% 62%,
+      base: (get-css-var(hsl-color-error-base-h) get-css-var(hsl-color-error-base-s) get-css-var(hsl-color-error-base-l)),
+			base-h: 345,
+			base-s: 100%,
+			base-l: 62%,
+    )
+	),
+	$hsl-color-map
+);
+// colors-session
+$color-map: () !default;
+$color-map: map.deep-merge(
+  (
+    primary: (
+      base: hsl(get-css-var(hsl-color-primary-base)),
+			hover: hsl(get-css-var(hsl-color-primary-base) / .8),
+      text: #005fdb,
+			foreground: hsl(0 0% 98%),
+      bg: rgba(79, 68, 224, 0.06)
+    ),
+    secondary: (
+      base: hsl(get-css-var(hsl-color-secondary-base)),
+			hover: hsl(get-css-var(hsl-color-secondary-base) / .8),
+			foreground: hsl(222 47% 11%)
+    ),
+    success: (
+      base: hsla(get-css-var(hsl-color-success-base-h), get-css-var(hsl-color-success-base-s), get-css-var(hsl-color-success-base-l), 0.15),
+      hover: hsla(get-css-var(hsl-color-success-base-h), get-css-var(hsl-color-success-base-s), get-css-var(hsl-color-success-base-l), 0.10),
+      foreground: hsl(get-css-var(hsl-color-success-base)),
+    ),
+    warning: (
+      base: hsla(44, 100%, 50%, .8),
+			hover: hsl(get-css-var(hsl-color-warning-base) / .8),
+			foreground: hsl(0 0% 98%),
+    ),
+    error: (
+      base: hsl(get-css-var(hsl-color-error-base)),
+      hover: hsl(get-css-var(hsl-color-error-base) / .8),
+			foreground: hsl(0 0% 98%),
+    )
+  ),
+  $color-map
+);
+
+// border-session
+$border-color-map: () !default;
+$border-color-map: map.merge(
+  (
+    base: hsl(214.3 31.8% 91.4%),
+    light-1: hsla(214.3,31.8%,91.4%, .8),
+    light-2: hsla(214.3,31.8%,91.4%, .7),
+    light-3: hsla(214.3,31.8%,91.4%, .6),
+    dark-1: #adb5bd,
+    dark-2: #868e96,
+  ),
+  $border-color-map
+);
+$border-width: 1px !default;
+$border-style: solid !default;
+$border-shape: get-css-var('border-width') get-css-var('border-style') !default;
+
+// transiton-session
+$transition-duration: 250ms !default;
+$transition-timing: ease !default;
+$transition-base: get-css-var('transition-duration') get-css-var('transition-timing') !default;
+$transition-map: () !default;
+$transition-map: map.merge(
+  (
+    color: color get-css-var('transition-base'),
+    background: background-color get-css-var('transition-base'),
+    border: border-color get-css-var('transition-base'),
+    shadow: box-shadow get-css-var('transition-base'),
+    opacity: opacity get-css-var('transition-base'),
+    transform: transform get-css-var('transition-base')
+  ),
+  $transition-map
+);
+
+// radius-session
+$radius-map: () !default;
+$radius-map: map.merge(
+  (
+    base: 6px,
+    large: 8px,
+    small: 4px
+  ),
+  $radius-map
+);
+
+// fill-session
+$fill-color-map: () !default;
+$fill-color-map: map.merge(
+  (
+    base: #fff,
+    secondary: #d9dfe2,
+    disabled: #dee2e6,
+    hover: get-css-var(color-secondary-base),
+    humble: #f3f4f6,
+    background: #f8f9fa,
+    reverse: #131719
+  ),
+  $fill-color-map
+);
+
+// padding-session
+$padding-map: () !default;
+$padding-map: map.merge(
+  (
+    xxs: 4px,
+    xs: 8px,
+    sm: 12px,
+    base: 18px,
+    lg: 24px
+  ),
+  $padding-map
+);
+
+$margin-map: () !default;
+$margin-map: map.merge(
+  (
+    xxs: 4px,
+    xs: 8px,
+    sm: 12px,
+    base: 18px,
+    lg: 24px
+  ),
+  $padding-map
+);
+
+// content-session
+$content-color-map: () !default;
+$content-color-map: map.merge(
+  (
+    primary: #212529,
+    base: get-css-var(color-secondary-foreground),
+		hover: hsl(get-css-var(color-secondary-foreground) / 0.6),
+    secondary: rgba(27, 43, 65, 0.69),
+    third: #a1adb1,
+    disabled: #adb5bd,
+    placeholder: #94a3b8,
+    humble: #dee2e6,
+    reverse: #fff
+  ),
+  $content-color-map
+);
+
+// shadow-session
+$shadow-color-map: () !default;
+$shadow-color-map: map.merge(
+  (
+    base: #dee2e6,
+    light-1: rgba(79, 68, 224, 0.1),
+    light-2: rgba(0,0,0,.05),
+    light-3: rgba(82, 63, 105, 0.15),
+    dark-1: #ced4da,
+    dark-2: #adb5bd
+  ),
+  $shadow-color-map
+);
+$shadow-x: 0 !default;
+$shadow-y: 0 !default;
+$shadow-blur: 6px !default;
+$shadow-shape: get-css-var('shadow-x') get-css-var('shadow-y') get-css-var('shadow-blur') !default;
+$shadow-base: get-css-var('shadow-shape') get-css-var('border-color-base') !default;
+$shadow-border: 0 0 0 1px !default;
+$shadow-focus: 0 0 2px 2px !default;
+
+// input design
+$input-height-map: () !default;
+$input-height-map: map.merge(
+  (
+    small: 30px,
+    middle: 34px,
+    large: 38px
+  ),
+  $input-height-map
+);
+
+$input-v-padding: 8px !default;
+$input-h-padding: 10px !default;
+$input-hover-bg: hsl(240 4.8% 98%) !default;
+
+// font-size-session
+$font-size-map: () !default;
+$font-size-map: map.merge(
+  (
+    base: 14px,
+    primary: 16px,
+    secondary: 12px
+  ),
+  $font-size-map
+);
+
+// line-height-session
+$line-height-map: () !default;
+$line-height-map: map.merge(
+  (
+    base: 1.2,
+    primary: 28px,
+    secondary: 1
+  ),
+  $line-height-map
+);
+
+// font-family-session
+$font-family-map: () !default;
+$font-family-map: map.merge(
+  (
+    base: #{
+      -apple-system, 
+      BlinkMacSystemFont, 
+      'Segoe UI', 
+      Roboto, 
+      'Helvetica Neue', 
+      Arial,
+      'Noto Sans', 
+      sans-serif, 
+      'Apple Color Emoji', 
+      'Segoe UI Emoji', 
+      'Segoe UI Symbol',
+      'Noto Color Emoji'
+    },
+    mono: #{ui-monospace,
+    SFMono-Regular,
+    'SF Mono',
+    Menlo,
+    Monaco,
+    Consolas,
+    'Liberation Mono',
+    'Courier New',
+    monospace}
+  ),
+  $font-family-map
+);
+
+@mixin define-type-color($type) {
+  $colors: map.get($color-map, $type);
+
+  @each $name in map.keys($colors) {
+    @include define-css-var(('color', $type, $name), map.get($colors, $name));
+  }
+}
+@mixin define-base-color($type) {
+  $colors: map.get($hsl-color-map, $type);
+
+  @each $name in map.keys($colors) {
+    @include define-css-var(('hsl-color', $type, $name), map.get($colors, $name));
+  }
+}
+@mixin define-level-colors($type, $max-level, $mode, $mixed-color) {
+  @for $i from 1 through $max-level {
+    $color-map: map.deep-merge(
+      (
+        $type: (
+          '#{$mode}-#{$i}':
+            color.mix(
+              $mixed-color,
+              map.get($color-map, $type, 'base'),
+              math.percentage(math.div($i, 10))
+            )
+        )
+      ),
+      $color-map
+    ) !global;
+  }
+}
+
+@mixin define-opacity-colors($type, $max-level) {
+  @for $i from 1 through $max-level {
+    $color-map: map.deep-merge(
+      (
+        $type: (
+          'opacity-#{$i}':
+            rgba(map.get($color-map, $type, 'base'), math.percentage(math.div(10 - $i, 10)))
+        )
+      ),
+      $color-map
+    ) !global;
+  }
+}
+
+@each $type in $types {
+  // @include define-level-colors($type, 9, 'light', $color-white);
+  // @include define-level-colors($type, 9, 'dark', $color-black);
+  // @include define-opacity-colors($type, 9);
+}

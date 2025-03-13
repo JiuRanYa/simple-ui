@@ -1,0 +1,149 @@
+@use 'sass:map';
+
+@use './shared' as *;
+@use './design' as *;
+@use './common/animation.scss' as *;
+
+$month-grid: () !default;
+$month-grid: map.merge((), $month-grid);
+
+.#{$namespace}-month-grid {
+  display: table;
+  width: 100%;
+  padding-inline: 22px;
+  padding-top: 12px;
+  border-collapse: separate;
+
+  &-vars {
+    @include define-preset-values('date-picker', $month-grid);
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: calc(((100% / 7) - var(--bl-font-size-base)) / 2);
+  }
+
+  $prefix: '#{$namespace}-month-grid';
+
+  &__days--body {
+
+    tr[role='row'] {
+      display: flex;
+      margin: 2px 0;
+
+      .before-range {
+        background-color: get-css-var(color-secondary-base);
+        border-radius: 0;
+        &:first-child {
+          background: linear-gradient(to left, get-css-var(color-secondary-base), get-css-var(bg-color-base))
+        }
+      }
+      .is-end:not(.end) ~ td {
+        background-color: get-css-var(color-secondary-base);
+        border-radius: 0;
+        &:last-child {
+          background: linear-gradient(to right, get-css-var(color-secondary-base), get-css-var(bg-color-base))
+        }
+      }
+
+      td {
+        width: calc(100% / 7);
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: color 0.2s;
+        position: relative;
+
+        &[aria-label]:not([aria-label='']):hover {
+          cursor: default;
+        }
+
+        &[aria-label]:not([aria-label=''], .end, .start):hover {
+          &::before {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            border: 2px solid get-css-var(color-primary-base);
+            border-radius: 50%;
+          }
+        }
+
+        .#{$prefix}__index--inner {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      td.today:not(.selected):not(.in-range):not(.start):not(.end) {
+        animation: border-flash 1.4s infinite;
+      }
+      td.selected {
+        color: get-css-var(content-color-reverse);
+        border: 2px solid get-css-var(color-primary-base);
+        background-color: get-css-var(color-primary-base);
+      }
+      td.start {
+        @extend .selected;
+      }
+      td.start.in-range {
+        &::before {
+          content: '';
+          position: absolute;
+          background-color: get-css-var(color-secondary-base);
+          z-index: -1;
+          inset: -2px -2px;
+          border-top-left-radius: 50%;
+          border-bottom-left-radius: 50%;
+        }
+      }
+      td.in-range + .end {
+        &:not(.in-range)::before {
+          content: '';
+          position: absolute;
+          background-color: get-css-var(color-secondary-base);
+          z-index: -1;
+          inset: -2px -2px;
+          border-top-right-radius: 50%;
+          border-bottom-right-radius: 50%;
+        }
+      }
+      td.before-range + .end {
+        &:not(.in-range)::before {
+          content: '';
+          position: absolute;
+          background-color: get-css-var(color-secondary-base);
+          z-index: -1;
+          inset: -2px -2px;
+          border-top-right-radius: 50%;
+          border-bottom-right-radius: 50%;
+        }
+      }
+      td.end {
+        @extend .selected;
+      }
+      td.in-range:not(.start) {
+        border-radius: 0;
+        background-color: get-css-var(color-secondary-base);
+        &:first-child {
+          border-radius: 4px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        &:last-child {
+          border-radius: 4px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}

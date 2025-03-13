@@ -1,0 +1,49 @@
+@use './shared' as *;
+@use './design' as *;
+
+.#{$namespace}-row {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: get-css-var('row-v-gap');
+  margin-inline-start: calc(-0.5 * get-css-var('row-h-gap'));
+  margin-inline-end: calc(-0.5 * get-css-var('row-h-gap'));
+
+  @include basis;
+
+  &--start {
+    justify-content: flex-start;
+  }
+
+  &--end {
+    justify-content: flex-end;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--space-around {
+    justify-content: space-around;
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+
+  &--space-evenly {
+    justify-content: space-evenly;
+  }
+
+  &--top {
+    align-items: flex-start;
+  }
+
+  &--middle {
+    align-items: center;
+  }
+
+  &--bottom {
+    align-items: flex-end;
+  }
+}

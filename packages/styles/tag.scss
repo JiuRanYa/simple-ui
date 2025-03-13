@@ -1,0 +1,66 @@
+@use 'sass:map';
+@use './shared' as *;
+@use './design' as *;
+
+$tag-map: () !default;
+$tag-map: map.merge(
+	(
+		color: get-css-var(primary-color-foreground),
+		bg-color: get-css-var(border-color-base),
+		font-size: get-css-var(font-size-secondary)
+	),
+	$tag-map
+);
+
+.#{$namespace}-tag {
+	display: inline-flex;
+	justify-content: center;
+	background: get-css-var(tag-bg-color);
+	align-items: center;
+	line-height: 1.6;
+	padding: 0 10px;
+  font-size: get-css-var(tag-font-size);
+  border-radius: 999px;
+	color: get-css-var(tag-color);
+
+  @include basis;
+
+	&:hover {
+		background: get-css-var(tag-bg-color-hover);
+	}
+
+  &-vars {
+    @include define-preset-values('tag', $tag-map);
+  }
+
+	& + & {
+		margin-inline-start: 6px;
+	}
+
+  &__large {
+    line-height: 1.8;
+  }
+  &__small {
+    line-height: 1.4;
+  }
+
+
+	@mixin define-tag-style ($style-map) {
+    @include define-preset-style('tag', $style-map);
+	}
+
+  @each $type in $types {
+    @at-root {
+      &__#{$type} {
+        @include define-tag-style(
+          (
+            color: 'color' $type 'foreground',
+						color-active: 'color' $type 'foreground',
+            bg-color: 'color' $type 'base',
+            bg-color-hover: 'color' $type 'hover'
+          )
+        );
+      }
+    }
+  }
+}

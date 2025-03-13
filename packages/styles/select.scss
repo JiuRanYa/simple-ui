@@ -1,0 +1,171 @@
+@use 'sass:map';
+
+@use './shared' as *;
+@use './design' as *;
+
+$select: () !default;
+$select: map.merge(
+  (
+    list-b: get-css-var('border-shape') get-css-var('select-list-b-color'),
+    list-b-color: get-css-var('border-color-base'),
+		height: get-css-var(input-height-middle),
+  ),
+  $select
+);
+
+.#{$namespace}-select {
+  display: inline-flex;
+  width: 100%;
+  cursor: pointer;
+  transition: get-css-var(transition-background);
+  background-color: get-css-var(bg-color-base);
+	position: relative;
+	height: get-css-var(select-height);
+
+  @include basis;
+
+  &-vars {
+    @include define-preset-values('select', $select);
+  }
+
+	&--popper {
+		padding: 5px 0;
+	}
+
+	&__wrapper {
+    width: 100%;
+    box-shadow: get-css-var('shadow-base');
+    border-radius: get-css-var(radius-base);
+		background: get-css-var(bg-color-base)
+	}
+
+  &--small {
+    @include define-preset-values('select',
+      (
+        height: get-css-var(input-height-small),
+      )
+    );
+  }
+
+  &--middle {
+    @include define-preset-values('select',
+      (
+        height: get-css-var(input-height-middle),
+      )
+    );
+  }
+
+  &--large {
+    @include define-preset-values('select',
+      (
+        height: get-css-var(input-height-large),
+      )
+    );
+  }
+
+  &__selector--focused &__arrow {
+    transform: rotate(180deg);
+  }
+
+  &__selector {
+    display: flex;
+    padding: 8px 10px;
+    width: 100%;
+		border: get-css-var(select-list-b);
+		border-radius: get-css-var(radius-base);
+		font-size: get-css-var(font-size-base);
+		line-height: get-css-var(line-height-base);
+		border-radius: get-css-var(radius-base);
+    background-color: get-css-var(bg-color-base);
+  }
+
+	&__input { 
+		display: inline-block;
+    height: 100%;
+		border: none;
+		width: 100%;
+		padding: 0;
+		outline: none;
+		color: inherit;
+		background: inherit;
+
+		&:hover {
+			border: none;
+			box-shadow: none;
+		}
+		&:focus-within {
+			border: none;
+			box-shadow: none;
+		}
+	}
+
+  &__list {
+    width: 100%;
+    padding: 6px;
+  }
+	&-tag-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin-bottom: 8px;
+
+		.#{$namespace}-tag + .#{$namespace}-tag{
+			margin-inline-start: 0;
+		}
+	}
+  &__control {
+    position: relative;
+    display: flex;
+		flex-wrap: wrap;
+    align-items: center;
+    flex: 1 0 0;
+    min-width: 0;
+    padding: 0;
+		font-size: get-css-var(font-size-base);
+		line-height: get-css-var(line-height-base);
+		color: get-css-var(content-color-secondary);
+
+		input::placeholder {
+			color: get-css-var(content-color-secondary);
+		}
+  }
+
+  &__placeholder {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 90%;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__clear {
+		position: absolute;
+  }
+
+	&--empty {
+		padding: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: auto;
+		color: get-css-var(content-color-disabled);
+	}
+
+  &--disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    
+    .#{$namespace}-select__selector {
+      background-color: get-css-var(bg-color-disabled);
+    }
+    
+    .#{$namespace}-select__input {
+      cursor: not-allowed;
+    }
+  }
+}

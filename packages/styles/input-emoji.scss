@@ -1,0 +1,155 @@
+@use "sass:map";
+@use "./shared" as *;
+@use "./design" as *;
+
+$input-emoji: () !default;
+$input-emoji: map.merge(
+  (
+    height: get-css-var(input-height-middle),
+    font-size: get-css-var(font-size-base),
+    line-height: get-css-var(line-height-base),
+    radius: get-css-var(radius-base),
+    padding: 8px 10px,
+    border-color: get-css-var(border-color-base),
+  ),
+  $input-emoji
+);
+
+.#{$namespace}-input-emoji {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  gap: get-css-var(input-emoji-padding);
+
+  width: 100%;
+  height: get-css-var(input-emoji-height);
+  overflow: hidden;
+
+  border: get-css-var(border-shape);
+  border-radius: get-css-var(input-emoji-radius);
+  color: get-css-var(content-color-base);
+
+  &-vars {
+    @include define-preset-values("input-emoji", $input-emoji);
+  }
+
+  &__input {
+    outline: none;
+    min-width: 0;
+    font-size: get-css-var(input-emoji-font-size);
+    line-height: get-css-var(input-emoji-line-height);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex-shrink: 1;
+    flex-grow: 1;
+  }
+
+  &.show {
+    border-color: transparent;
+    &:not(.always) {
+      cursor: pointer;
+    }
+
+    &.always {
+      .#{$namespace}-input-emoji__picker {
+        cursor: text;
+      }
+    }
+
+    .#{$namespace}-input-emoji__input::selection {
+      background: transparent;
+    }
+  }
+
+  &.editing {
+    border-color: get-css-var(input-emoji-border-color);
+    padding: get-css-var(input-emoji-padding);
+
+    .#{$namespace}-input-emoji__input {
+      &.editable {
+        cursor: text;
+      }
+      &.readonly {
+        cursor: pointer;
+      }
+    }
+
+    .#{$namespace}-input-emoji__input {
+      text-overflow: initial;
+    }
+  }
+
+  &--small {
+    @include define-preset-values(
+      "input-emoji",
+      (
+        height: get-css-var(input-height-small),
+        line-height: get-css-var(line-height-secondary),
+        font-size: get-css-var(font-size-secondary),
+      )
+    );
+  }
+
+  &--large {
+    @include define-preset-values(
+      "input-emoji",
+      (
+        height: get-css-var(input-height-large),
+        line-height: get-css-var(line-height-primary),
+        font-size: get-css-var(font-size-primary),
+      )
+    );
+  }
+
+  &__picker {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: get-css-var(input-emoji-radius);
+    height: calc(get-css-var(input-emoji-font-size) * 1.2);
+    width: calc(get-css-var(input-emoji-font-size) * 1.2);
+  }
+
+  &__tools {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    cursor: pointer;
+    height: get-css-var(input-emoji-height);
+
+    gap: calc(get-css-var(input-emoji-padding) / 2);
+    position: relative;
+    left: calc(
+      get-css-var(input-emoji-padding) -
+        calc(
+          (
+              get-css-var(input-emoji-height) -
+                get-css-var(input-emoji-font-size) * 0.8
+            ) / 4
+        )
+    );
+
+    &--icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: get-css-var(content-color-secondary);
+      padding: calc(
+        (
+            get-css-var(input-emoji-height) - get-css-var(input-emoji-font-size) -
+              2 * get-css-var(border-width)
+          ) / 4
+      );
+      font-size: calc(get-css-var(input-emoji-font-size) * 0.8);
+
+      &:hover {
+        border-radius: calc(get-css-var(input-emoji-radius) * 0.8);
+        color: get-css-var(content-color-base);
+        background: get-css-var(color-secondary-hover);
+      }
+    }
+  }
+}

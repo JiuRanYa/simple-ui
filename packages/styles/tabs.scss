@@ -1,0 +1,54 @@
+@use 'sass:map';
+@use './shared' as *;
+@use './design' as *;
+
+$tabs: () !default;
+$tabs: map.merge((), $tabs);
+
+.#{$namespace}-tabs {
+  display: flex;
+  flex-direction: column;
+
+  &--transition-box {
+    background: get-css-var(fill-color-base);
+    position: absolute;
+    transition: all .25s ease-in-out;
+    border-radius: inherit;
+  }
+
+  &--left {
+    flex-direction: row;
+  }
+  &--right {
+    flex-direction: row-reverse;
+  }
+  &--top {
+    flex-direction: column;
+  }
+  &--bottom {
+    flex-direction: column-reverse;
+  }
+
+  .is-left {
+    flex-direction: column;
+    margin-right: 8px;
+  }
+  .is-right {
+    flex-direction: column;
+    margin-left: 8px;
+  }
+
+  .is-top {
+    flex-direction: row;
+    margin-bottom: 8px;
+  }
+  .is-bottom {
+    flex-direction: row;
+    margin-top: 8px;
+  }
+
+  &-content {
+		flex: auto;
+		overflow: auto;
+  }
+}
