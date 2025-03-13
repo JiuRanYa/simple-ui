@@ -1,5 +1,5 @@
 ---
-title: Guild | Panda UI
+title: Guild | Simple UI
 lang: zh-CN
 ---
 

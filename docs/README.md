@@ -1,3 +1,3 @@
-# Panda UI docs
+# Simple UI docs
 
-Docs for Panda UI library, based on vitepress.
+Docs for Simple UI library, based on vitepress.

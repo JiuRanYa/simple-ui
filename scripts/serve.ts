@@ -42,7 +42,7 @@ async function serveComponent() {
   const router = `
     import { createRouter, createWebHistory } from 'vue-router'
 
-    document.title = '${target} | Panda UI'
+    document.title = '${target} | Simple UI'
 
     export const router = createRouter({
       history: createWebHistory('/'),
@@ -64,7 +64,7 @@ async function serveComponent() {
     })
 
     router.afterEach(to => {
-      document.title = \`${target} - \${typeof to.name === 'string' ? to.name : 'dev'} | Panda UI\`
+      document.title = \`${target} - \${typeof to.name === 'string' ? to.name : 'dev'} | Simple UI\`
     })
   `
 

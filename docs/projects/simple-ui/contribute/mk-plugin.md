@@ -6,7 +6,7 @@ description: 使用Markdown插件
 
 ## Markdown Plugin
 
-在您书写Markdown文档时，Panda UI内置了一些markdown语法来帮助您轻松完成提示等功能
+在您书写Markdown文档时，Simple UI内置了一些markdown语法来帮助您轻松完成提示等功能
 
 ### 使用Tip
 

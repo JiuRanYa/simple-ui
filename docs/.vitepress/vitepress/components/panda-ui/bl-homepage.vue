@@ -18,7 +18,7 @@ function handleStartClick() {
     <div class="homepage-main">
       <div class="homepage-main-one">
         <div class="homepage-main-title">
-          Panda UI
+          Simple UI
         </div>
         <div class="homepage-main-desc">
           高度可定制化，全量
@@ -42,7 +42,7 @@ function handleStartClick() {
         </div>
         <div class="homepage-main-four-desc">
           <span>
-            Panda UI 针对多项目设计，可扩展的命名空间，统一的 sass 设计，
+            Simple UI 针对多项目设计，可扩展的命名空间，统一的 sass 设计，
             <br>计划提供不同的原子类样式的统一预设，
             <br>可做到无暇接入现有项目，并按需提供了高质量的hooks
           </span>

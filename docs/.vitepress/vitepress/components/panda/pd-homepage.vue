@@ -17,7 +17,7 @@ function handleStartClick() {
     <div class="homepage-main">
       <div class="homepage-main-one">
         <div class="homepage-main-title">
-          Panda
+          Simple
         </div>
         <div class="homepage-main-desc">
           Boost your productivity with us,

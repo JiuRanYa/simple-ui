@@ -2,14 +2,14 @@ export const PROJEACT = Symbol('project')
 
 export const SUPPORT_PROJECTS = [
   {
-    title: 'Panda UI',
+    title: 'Simple UI',
     desc: 'A modern vue3 components set, full typescript.',
     icon: 'https://d1cse7lsiayene.cloudfront.net/bole-design/projects/design.png',
     showcase: 'https://d1cse7lsiayene.cloudfront.net/bole-design/projects/design-home.jpg',
     link: 'https://design.spinxbi.com/projects/simple-ui/',
   },
   {
-    title: 'Panda',
+    title: 'Simple',
     desc: 'Boost your productivity with us, empower your workflow and achieve more.',
     icon: 'https://d1cse7lsiayene.cloudfront.net/bole-design/projects/panda.png',
     showcase: 'https://d1cse7lsiayene.cloudfront.net/bole-design/projects/panda-home.jpg',

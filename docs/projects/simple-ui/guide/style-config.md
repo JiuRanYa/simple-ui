@@ -4,7 +4,7 @@ lang: en-US
 
 # 样式配置
 
-Panda UI 的样式由 sass 编写，同时结合一些规则让配置变得容易。
+Simple UI 的样式由 sass 编写，同时结合一些规则让配置变得容易。
 
 ## 通过 sass 修改
 

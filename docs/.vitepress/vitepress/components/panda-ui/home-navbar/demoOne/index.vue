@@ -78,7 +78,7 @@ const emailSelectOptions = [
                 用户名
               </div>
 
-              <Input style="width: 600px" placeholder="Panda UI" />
+              <Input style="width: 600px" placeholder="Simple UI" />
               <div class="form-label-desc">
                 这是您的公开显示名称。可以是您的真实姓名或化名。您每30天只能更改一次此名称。
               </div>
@@ -109,7 +109,7 @@ const emailSelectOptions = [
                 姓名
               </div>
 
-              <Input style="width: 600px" placeholder="Panda UI" />
+              <Input style="width: 600px" placeholder="Simple UI" />
               <div class="form-label-desc">
                 这是将在您的个人资料上和电子邮件中显示的名字。
               </div>

@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <Input ref="instance" v-model:value="value" placeholder="Panda UI" />
+  <Input ref="instance" v-model:value="value" placeholder="Simple UI" />
 
   <br>
   <br>

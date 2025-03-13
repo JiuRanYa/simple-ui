@@ -1,12 +1,12 @@
 ---
 title: 项目设计
 page: true
-description: Panda UI文档项目设计
+description: Simple UI文档项目设计
 ---
 
 ## 开篇
 
-Panda UI在设计之初时，`项目`是文档体系的最上层结构
+Simple UI在设计之初时，`项目`是文档体系的最上层结构
 
 不管添加任何配置，均要在`项目`的概念下
 

@@ -6,7 +6,7 @@ description: Icon组件
 
 # Icon
 
-`Panda UI` 使用` @simple-ui/icons` 作为图标库，该图标库收集于 `Font Awesome 6.x` 的免费图标
+`Simple UI` 使用` @simple-ui/icons` 作为图标库，该图标库收集于 `Font Awesome 6.x` 的免费图标
 
 你也可以直接在`Icon` 组件下放置任何 `svg `内容
 

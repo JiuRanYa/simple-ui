@@ -6,7 +6,7 @@ description: 创建新的文档
 
 ## 开始
 
-关于`Panda UI`的所有文档均在`bole-design/web/docs`目录下
+关于`Simple UI`的所有文档均在`bole-design/web/docs`目录下
 
 ### 启动项目
 
@@ -19,7 +19,7 @@ description: 创建新的文档
 
 如果您需要新增一个`头部导航`，您可以在`web/docs/.vitepress/config/nav.ts`中添加
 
-比如您想在`Panda UI`项目下新增`测试`的导航栏
+比如您想在`Simple UI`项目下新增`测试`的导航栏
 
 ![image](/simple-ui/docs/1.png)
 
@@ -53,7 +53,7 @@ getProjectLink的第一个参数一定要与项目名称保存一致
 
 该目录下的文件名则对应不同的项目，且路径以文件夹划分
 
-如上我们已经为`Panda UI`添加了一个头部标题为`测试`，对应的目录为`/contribute/start`，
+如上我们已经为`Simple UI`添加了一个头部标题为`测试`，对应的目录为`/contribute/start`，
 
 现在我们需要项目目录下，新增一个markdown文件，路径与上方配置保持一致
 

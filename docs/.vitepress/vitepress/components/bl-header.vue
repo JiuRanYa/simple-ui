@@ -150,7 +150,7 @@ onMounted(() => {
       <div class="bl-header-right">
         <Dropdown v-model:visible="visible" placement="bottom-start">
           <div class="bl-header-search">
-            <input ref="inputRef" v-model="inputSearchKey" placeholder="在Panda UI中搜索">
+            <input ref="inputRef" v-model="inputSearchKey" placeholder="在Simple UI中搜索">
             <kbd>⌘ K</kbd>
           </div>
 

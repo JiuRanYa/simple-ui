@@ -3,13 +3,13 @@
 <template>
   <Row :gap="[10, 10]">
     <Col :span="8">
-      <Input placeholder="Panda UI"  size="large"/>
+      <Input placeholder="Simple UI"  size="large"/>
     </Col>
     <Col :span="8">
-      <Input placeholder="Panda UI" />
+      <Input placeholder="Simple UI" />
     </Col>
     <Col :span="8">
-      <Input placeholder="Panda UI" size="small"/>
+      <Input placeholder="Simple UI" size="small"/>
     </Col>
   </Row>
 </template>

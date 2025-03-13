@@ -9,5 +9,5 @@ function handleChange() {
 </script>
 
 <template>
-  <Input v-model:value="value" placeholder="Panda UI" @change="handleChange" />
+  <Input v-model:value="value" placeholder="Simple UI" @change="handleChange" />
 </template>

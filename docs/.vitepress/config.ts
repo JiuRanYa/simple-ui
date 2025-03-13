@@ -6,7 +6,7 @@ export const markdownTheme = 'andromeeda'
 
 // https://vitepress.dev/reference/site-config
 const config = defineConfig({
-  title: 'Panda UI',
+  title: 'Simple UI',
   lang: 'zh-CN',
   description: '高度可定制化，全量 Typescript 支持，面向开发者的工具集',
   head,

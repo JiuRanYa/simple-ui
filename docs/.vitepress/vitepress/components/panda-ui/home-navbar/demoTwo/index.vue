@@ -256,7 +256,7 @@ const options = [
         </CardHeader>
         <CardBody>
           <div style="position: relative">
-            <Input value="//design.spinbi.com" placeholder="share Panda UI" style="width: 66%" />
+            <Input value="//design.spinbi.com" placeholder="share Simple UI" style="width: 66%" />
             <Button disabled style="position: absolute; right: 0; bottom: 0" type="primary">
               Copy Link
             </Button>

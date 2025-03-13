@@ -1,12 +1,12 @@
 ---
 title: 新增项目
 page: true
-description: Panda UI文档新增项目
+description: Simple UI文档新增项目
 ---
 
 ## 新增项目
 
-接下来我们尝试`Panda UI`文档中新增一个支持项目，名称为`测试项目`
+接下来我们尝试`Simple UI`文档中新增一个支持项目，名称为`测试项目`
 
 首先在`web/docs/projects`下，创建一个名称是`您想支持的项目`的文件夹，并在项目文件夹下新建一个`index.md`，内容如下
 
@@ -33,9 +33,9 @@ lang: zh-CN
 
 ## 将项目新增到支持项目中
 
-完成以上工作后，您已经可以支持一个新的项目在Panda UI了
+完成以上工作后，您已经可以支持一个新的项目在Simple UI了
 
-但是由于鉴权问题，您需要在Panda UI支持项目的列表里加上您的项目名
+但是由于鉴权问题，您需要在Simple UI支持项目的列表里加上您的项目名
 
 在`docs/.vitepress/configs/projects`中，将您项目的详细信息添加到列表中去
 
@@ -53,7 +53,7 @@ export const SUPPORT_PROJECTS = [
 export const supportProjects = ['测试项目']
 ```
 
-到此，您已经为Panda UI支持了全新的项目
+到此，您已经为Simple UI支持了全新的项目
 
 您可以访问`/projects/simple-ui/`路由来查看`TestHomepage`页面
 

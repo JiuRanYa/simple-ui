@@ -6,7 +6,7 @@ lang: en-US
 
 ## 使用方式
 
-如果您想要在Nuxt项目中使用`Panda UI`，可以使用`@simple-ui/nuxt`模块快速集成到你的项目里
+如果您想要在Nuxt项目中使用`Simple UI`，可以使用`@simple-ui/nuxt`模块快速集成到你的项目里
 
 ```shell
 # Using pnpm
@@ -23,13 +23,13 @@ export default defineNuxtConfig({
   modules: [
     '@simple-ui/nuxt'
   ],
-  PandaUI: {
+  SimpleUI: {
     // Your module options
   }
 })
 ```
 
-接下来，您可以直接使用Panda UI中的组件
+接下来，您可以直接使用Simple UI中的组件
 
 ```vue
 <template>
