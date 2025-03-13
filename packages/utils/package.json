@@ -1,7 +1,7 @@
 {
-  "name": "@panda-ui/utils",
+  "name": "@simple-ui/utils",
   "version": "1.0.2",
-  "description": "Panda UI utils",
+  "description": "Simple UI utils",
   "author": "Tong Siyuan",
   "license": "ISC",
   "keywords": [],

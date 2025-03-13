@@ -1,7 +1,7 @@
 {
-  "name": "panda-ui",
+  "name": "simple-ui",
   "version": "2.4.3",
-  "description": "Panda UI, A high quality Vue 3 components library",
+  "description": "Simple UI, A high quality Vue 3 components library",
   "author": "Tong Siyuan",
   "license": "ISC",
   "keywords": [],

@@ -10,7 +10,6 @@
     "serve": "vite"
   },
   "dependencies": {
-    "@simple-ui/styles": "workspace:*",
     "unplugin-vue-components": "^0.24.1",
     "vue-router": "^4.1.6"
   }
