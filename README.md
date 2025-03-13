@@ -1,6 +1,6 @@
-# Panda UI
+# Simple UI
 
-Panda Design System
+Simple Design System
 
 ## Features
 
@@ -20,12 +20,12 @@ Panda Design System
 ## 快速安装
 
 ```shell
-npm install panda-ui
+npm install simple-ui
 
-yarn install panda-ui
+yarn install simple-ui
 
 //更推荐使用pnpm来解决您的幽灵依赖问题
-pnpm install panda-ui
+pnpm install simple-ui
 
 ```
 
@@ -36,8 +36,8 @@ import { createApp } from 'vue'
 import App from './app.vue'
 
 // 直接全局引入
-import { install } from 'panda-ui'
-import 'panda-ui/css/index.css'
+import { install } from 'simple-ui'
+import 'simple-ui/css/index.css'
 
 createApp(App).use(install)
 ```
@@ -49,7 +49,7 @@ createApp(App).use(install)
 ```json
 {
   "compilerOptions": {
-    "types": ["panda-ui/types"]
+    "types": ["simple-ui/types"]
   }
 }
 ```
