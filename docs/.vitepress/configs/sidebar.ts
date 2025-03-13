@@ -53,7 +53,6 @@ export const siderbarsConfig: SidebarsConfig = {
           { text: 'TimePicker 时间选择器', link: '/components/time-picker' },
           { text: 'DatePicker 日期选择器', link: '/components/date-picker' },
           { text: 'EmojiPicker 表情选择器', link: '/components/emoji-picker' },
-          { text: 'InputNumber 数字输入框', link: '/components/input-number' },
           { text: 'InputEmoji 表情输入框', link: '/components/input-emoji' },
           { text: 'Filter 筛选器', link: '/components/filter' },
           { text: 'FilterGroup 筛选器组合', link: '/components/filter-group' },
