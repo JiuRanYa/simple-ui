@@ -28,7 +28,7 @@
     "build:style": "gulp --require sucrase/register/ts",
     "build:icons": "pnpm -C packages/icons build",
     "build:hooks": "pnpm -C packages/hooks build",
-    "build:internal": "pnpm -C internal build",
+    "build:internal": "pnpm -C packages/internal build",
     "build-all": "run-s build-common build",
     "build-common": "run-s build:internal build:hooks build:icons",
     "precommit": "lint-staged -c ./.husky/.lintstagedrc --no-stash --allow-empty",
