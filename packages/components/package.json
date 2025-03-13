@@ -1,7 +1,7 @@
 {
-  "name": "@panda-ui/components",
+  "name": "@simple-ui/components",
   "version": "1.0.2",
-  "description": "Panda UI components menorepo",
+  "description": "Simple UI components menorepo",
   "author": "Tong Siyuan",
   "license": "MIT",
   "keywords": [],

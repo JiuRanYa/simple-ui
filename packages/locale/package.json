@@ -1,7 +1,7 @@
 {
-  "name": "@panda-ui/locale",
+  "name": "@simple-ui/locale",
   "version": "0.0.2",
-  "description": "Panda UI Locale",
+  "description": "Simple UI Locale",
   "license": "MIT",
   "main": "index.ts",
   "module": "index.ts",

@@ -1,8 +1,8 @@
 {
-  "name": "@panda-ui/icons",
+  "name": "@simple-ui/icons",
   "type": "module",
   "version": "1.0.4",
-  "description": "Panda UI icons monerepo",
+  "description": "Simple UI icons monerepo",
   "author": "Tong Siyuan",
   "license": "MIT",
   "sideEffects": [
