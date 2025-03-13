@@ -131,7 +131,7 @@ export function toCamelCase(value: string) {
 export const hooksDir = resolve(rootDir, 'packages/hooks')
 export const componentsDir = resolve(rootDir, 'packages/components')
 export const iconDir = resolve(rootDir, 'docs/public/icon')
-export const publicDir = resolve(rootDir, 'dist/panda-ui')
+export const publicDir = resolve(rootDir, 'dist/simple-ui')
 
 export const components = readdirSync(componentsDir).filter((f) => {
   const path = resolve(componentsDir, f)

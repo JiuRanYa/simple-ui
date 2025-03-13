@@ -46,7 +46,7 @@ export const SUPPORT_PROJECTS = [
     desc: '这是一个测试项目，用于演示如何新增支持项目',
     icon: 'https://d1cse7lsiayene.cloudfront.net/bole-design/projects/design.png',
     showcase: 'https://d1cse7lsiayene.cloudfront.net/bole-design/projects/design-home.jpg',
-    link: 'https://design.spinxbi.com/projects/panda-ui/'
+    link: 'https://design.spinxbi.com/projects/simple-ui/'
   },
 ]
 
@@ -55,6 +55,6 @@ export const supportProjects = ['测试项目']
 
 到此，您已经为Panda UI支持了全新的项目
 
-您可以访问`/projects/panda-ui/`路由来查看`TestHomepage`页面
+您可以访问`/projects/simple-ui/`路由来查看`TestHomepage`页面
 
-如果您想为新项目新增导航和侧边栏，请查看 [配置头部导航](/projects/panda-ui/contribute/docs.html#头部导航)
+如果您想为新项目新增导航和侧边栏，请查看 [配置头部导航](/projects/simple-ui/contribute/docs.html#头部导航)

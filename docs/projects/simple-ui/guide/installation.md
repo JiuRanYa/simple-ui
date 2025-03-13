@@ -10,18 +10,18 @@ lang: en-US
 # 选择一个你喜欢的包管理器
 
 # NPM
-$ npm install panda-ui --save
+$ npm install simple-ui --save
 
 # Yarn
-$ yarn add panda-ui
+$ yarn add simple-ui
 
 # pnpm
-$ pnpm install panda-ui
+$ pnpm install simple-ui
 ```
 
 ## 分包安装
 
-`panda-ui`基于`Monorepo`开发，所以你可以根据自己的需求安装不同的工具包，以下是使用`pnpm`下载的示例
+`simple-ui`基于`Monorepo`开发，所以你可以根据自己的需求安装不同的工具包，以下是使用`pnpm`下载的示例
 
 ```shell
 
@@ -29,10 +29,10 @@ $ pnpm install panda-ui
 $ pnpm install @simple-ui/components
 
 # Hooks
-$ pnpm install panda-ui/hooks
+$ pnpm install simple-ui/hooks
 
 # 工具函数
-$ pnpm install panda-ui/utils
+$ pnpm install simple-ui/utils
 
 ```
 

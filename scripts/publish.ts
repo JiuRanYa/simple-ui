@@ -6,7 +6,7 @@ import findWorkspacePackages from '@pnpm/find-workspace-packages'
 import { run } from './utils'
 
 const versionChoices = ['patch', 'minor', 'major']
-const publicDir = 'dist/panda-ui'
+const publicDir = 'dist/simple-ui'
 
 export const getWorkspacePackages = () => findWorkspacePackages(projRoot)
 
@@ -32,7 +32,7 @@ async function main() {
     const pkgs = Object.fromEntries(
       (await getWorkspacePackages()).map(pkg => [pkg.manifest.name!, pkg]),
     )
-    const pandaUI = pkgs['panda-ui']
+    const pandaUI = pkgs['simple-ui']
 
     await writeVersion(pandaUI)
 

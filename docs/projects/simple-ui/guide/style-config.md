@@ -10,7 +10,7 @@ Panda UI 的样式由 sass 编写，同时结合一些规则让配置变得容�
 
 ```scss
 // style/index.scss
-@forward 'panda-ui/css/src/index.scss' with (
+@forward 'simple-ui/css/src/index.scss' with (
   $content-color-map: (
     base: #5e6278
   )
@@ -23,7 +23,7 @@ Panda UI 的样式由 sass 编写，同时结合一些规则让配置变得容�
 import './style/index.scss'
 
 import { createApp } from 'vue'
-import { install } from 'panda-ui'
+import { install } from 'simple-ui'
 
 createApp(App).use(install).mount('#app')
 ```

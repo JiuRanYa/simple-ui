@@ -28,7 +28,7 @@ async function main() {
 }
 
 async function serveComponent() {
-  const demosDir = resolve(rootDir, 'docs/demos/panda-ui')
+  const demosDir = resolve(rootDir, 'docs/demos/simple-ui')
   const allComponents = readdirSync(demosDir).filter(f =>
     statSync(resolve(demosDir, f)).isDirectory(),
   )
@@ -52,7 +52,7 @@ async function serveComponent() {
             return `{
               path: '${index ? `/${demo}` : '/'}',
               name: '${demo}',
-              component: () => import('../../docs/demos/panda-ui/${target}/${demo}/index.vue')
+              component: () => import('../../docs/demos/simple-ui/${target}/${demo}/index.vue')
             }`
           })
           .join(',\n')},
@@ -117,7 +117,7 @@ async function selectComponent(allComponents: string[]) {
 }
 
 function queryDemoFile(component: string, _lang: string) {
-  const compDir = resolve(rootDir, 'docs/demos/panda-ui', component)
+  const compDir = resolve(rootDir, 'docs/demos/simple-ui', component)
 
   return readdirSync(compDir).filter(
     f => statSync(resolve(compDir, f)).isDirectory() && existsSync(resolve(compDir, f, `index.vue`)),

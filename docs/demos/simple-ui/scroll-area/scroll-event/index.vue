@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ScrollAreaEvent } from 'panda-ui'
+import type { ScrollAreaEvent } from 'simple-ui'
 
 const tags = Array.from({ length: 50 }).map((_, i, a) => `${i + 1}`)
 

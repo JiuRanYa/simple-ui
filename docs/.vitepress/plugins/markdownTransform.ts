@@ -13,7 +13,7 @@ export default function markdownTransform(): Plugin {
 
       const component = basename(id, '.md')
       const scriptSetups = [
-        `const demos = import.meta.glob('../../../demos/panda-ui/${component}/**/*.vue', { eager: true, import: 'default' })`,
+        `const demos = import.meta.glob('../../../demos/simple-ui/${component}/**/*.vue', { eager: true, import: 'default' })`,
       ]
 
       return combineMarkdown(code, [`\n<script setup>\n${scriptSetups.join('\n')}\n</script>\n`])

@@ -18,7 +18,7 @@ const route = useRoute()
 const router = useRouter()
 
 onMounted(() => {
-  const defaultPro = 'panda-ui'
+  const defaultPro = 'simple-ui'
   const localStorageProName = 'bl-userPreferredPro'
   const path = route.path
   const hasLocalStorage = localStorage.getItem(localStorageProName)

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TabTriggerEmitState } from 'panda-ui'
+import type { TabTriggerEmitState } from 'simple-ui'
 import { ref } from 'vue'
 
 defineOptions({

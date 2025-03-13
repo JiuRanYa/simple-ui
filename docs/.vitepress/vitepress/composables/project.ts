@@ -1,6 +1,6 @@
 import { computed } from 'vue'
 
-export const defaultProject = 'panda-ui'
+export const defaultProject = 'simple-ui'
 
 export function useProject() {
   const project = defaultProject

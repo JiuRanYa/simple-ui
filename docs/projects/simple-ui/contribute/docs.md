@@ -21,7 +21,7 @@ description: 创建新的文档
 
 比如您想在`Panda UI`项目下新增`测试`的导航栏
 
-![image](/panda-ui/docs/1.png)
+![image](/simple-ui/docs/1.png)
 
 :::warning
 
@@ -57,9 +57,9 @@ getProjectLink的第一个参数一定要与项目名称保存一致
 
 现在我们需要项目目录下，新增一个markdown文件，路径与上方配置保持一致
 
-![image](/panda-ui/docs/markdown.png)
+![image](/simple-ui/docs/markdown.png)
 
-接下来在markdown编写即可，如果您有更高级的定制需求，可查看 [Markdown插件](/projects/panda-ui/contribute/mk-plugin)
+接下来在markdown编写即可，如果您有更高级的定制需求，可查看 [Markdown插件](/projects/simple-ui/contribute/mk-plugin)
 
 ### 右侧导航
 

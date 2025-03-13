@@ -14,7 +14,7 @@ Panda UI在设计之初时，`项目`是文档体系的最上层结构
 
 ```ts
 export const siderbarsConfig: SidebarsConfig = {
-  'panda-ui': {
+  'simple-ui': {
     guide: [
       {
         text: '指南',

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CascaderOptionState } from 'panda-ui'
+import type { CascaderOptionState } from 'simple-ui'
 import { ref } from 'vue'
 
 const modelValue = ref(['component', 'form', 'checkbox'])

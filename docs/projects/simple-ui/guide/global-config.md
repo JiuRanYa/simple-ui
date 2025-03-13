@@ -4,7 +4,7 @@ lang: en-US
 
 # 全局配置
 
-`panda-ui`提供了全局的配置功能，你可以在引入时配置不同组件的默认属性
+`simple-ui`提供了全局的配置功能，你可以在引入时配置不同组件的默认属性
 
 ## 默认配置
 
@@ -12,7 +12,7 @@ lang: en-US
 
 ```ts
 import { createApp } from 'vue'
-import { install } from 'panda-ui'
+import { install } from 'simple-ui'
 
 createApp(App)
   .use(install, {
@@ -36,7 +36,7 @@ createApp(App)
 
 ## 命名空间
 
-`panda-ui`可根据你的项目来自行修改前缀，包括`组件前缀`和`样式前缀`
+`simple-ui`可根据你的项目来自行修改前缀，包括`组件前缀`和`样式前缀`
 
 ### 组件命名空间
 
@@ -55,10 +55,10 @@ createApp(App).use(install, { prefix: 'PD' })
 
 ### 样式命名空间
 
-'panda-ui'的样式文件也可提供不同的命名空间，你可以在引入 sass 时这样配置
+'simple-ui'的样式文件也可提供不同的命名空间，你可以在引入 sass 时这样配置
 
 ```sass
-@use 'panda-ui/style' with (
+@use 'simple-ui/style' with (
   $namespace: 'pd'
 );
 

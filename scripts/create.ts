@@ -28,8 +28,8 @@ async function main() {
   			<${compName} />
   		</template>
   `
-  const demoRoot = resolve('docs/demos/panda-ui')
-  const demoPath = resolve('docs/demos/panda-ui', comp.name, 'basic')
+  const demoRoot = resolve('docs/demos/simple-ui')
+  const demoPath = resolve('docs/demos/simple-ui', comp.name, 'basic')
 
   const markdownTemp = `
 ---
@@ -40,7 +40,7 @@ lang: zh-CN
 # ${compName}
 
 <script setup>
-const demos = import.meta.globEager('../../../demos/panda-ui/${comp.name}/*/*.vue')
+const demos = import.meta.globEager('../../../demos/simple-ui/${comp.name}/*/*.vue')
 </script>
 
 ## 基础用法
@@ -51,7 +51,7 @@ ${comp.name}/basic
 
 :::
   	`
-  const markdownPath = resolve('docs/projects/panda-ui/components')
+  const markdownPath = resolve('docs/projects/simple-ui/components')
 
   const componentPath = resolve(`packages/components/${comp.name}`)
   const componentIndexTemp = `

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { ScrollAreaInstance } from 'panda-ui'
+import type { ScrollAreaInstance } from 'simple-ui'
 
 const tags = Array.from({ length: 50 }).map((_, i, a) => `${i + 1}`)
 

@@ -34,7 +34,7 @@ const currentProject: any = computed(() => {
 })
 
 const components = computed(() => {
-  return siderbarsConfig['panda-ui'].components
+  return siderbarsConfig['simple-ui'].components
     .reduce((res, item) => {
       res.push(...item.children)
       return res
@@ -126,7 +126,7 @@ watch(visible, () => (visible.value ? inputRef.value?.focus() : inputRef.value?.
 
 onMounted(() => {
   rootCls.value = document.documentElement.classList ?? []
-  project.value = localStorage.getItem(BL_PROJECT_STORAGE) ?? 'panda-ui'
+  project.value = localStorage.getItem(BL_PROJECT_STORAGE) ?? 'simple-ui'
 
   document.addEventListener('keydown', handleKeyboard)
 })
@@ -164,7 +164,7 @@ onMounted(() => {
                 <DropdownItem v-for="comp in components">
                   <a
                     style="display: inline-block; width: 100%"
-                    :href="getProjectLink('panda-ui', comp.link)"
+                    :href="getProjectLink('simple-ui', comp.link)"
                     @click="handleSelectComp"
                   >
                     {{ comp.text }}

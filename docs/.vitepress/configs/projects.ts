@@ -6,7 +6,7 @@ export const SUPPORT_PROJECTS = [
     desc: 'A modern vue3 components set, full typescript.',
     icon: 'https://d1cse7lsiayene.cloudfront.net/bole-design/projects/design.png',
     showcase: 'https://d1cse7lsiayene.cloudfront.net/bole-design/projects/design-home.jpg',
-    link: 'https://design.spinxbi.com/projects/panda-ui/',
+    link: 'https://design.spinxbi.com/projects/simple-ui/',
   },
   {
     title: 'Panda',
@@ -38,4 +38,4 @@ export const SUPPORT_PROJECTS = [
   },
 ]
 
-export const supportProjects = ['panda-ui', 'panda', 'raccoon', 'select-pro', 'sso', 'data-insights']
+export const supportProjects = ['simple-ui', 'panda', 'raccoon', 'select-pro', 'sso', 'data-insights']

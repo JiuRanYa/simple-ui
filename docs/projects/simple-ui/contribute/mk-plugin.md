@@ -60,7 +60,7 @@ description: 使用Markdown插件
 
 在一些情况下，我们需要展示代码的Demo，此时可以使用`demo`的插件完成
 
-在`web/docs/demos`下新建您的`vue`文件并引入，`avatar/basic`为`demos/panda-ui`下的路径
+在`web/docs/demos`下新建您的`vue`文件并引入，`avatar/basic`为`demos/simple-ui`下的路径
 
 ```markdown
 :::demo

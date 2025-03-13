@@ -9,7 +9,7 @@ defineComponent({
 const router = useRouter()
 
 function handleStartClick() {
-  router.go(`/projects/panda-ui/guide/design`)
+  router.go(`/projects/simple-ui/guide/design`)
 }
 </script>
 

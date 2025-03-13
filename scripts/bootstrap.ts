@@ -49,14 +49,14 @@ async function main() {
       export interface GlobalComponents {
         ${[...components]
           .map(
-            name => `${toCapitalCase(name)}: typeof import('panda-ui')['${toCapitalCase(name)}']`,
+            name => `${toCapitalCase(name)}: typeof import('simple-ui')['${toCapitalCase(name)}']`,
           )
           .join(',\n')}
       }
 
       interface ComponentCustomProperties {
         ${plugins
-          .map(name => `$${name}: typeof import('panda-ui')['${toCapitalCase(name)}']`)
+          .map(name => `$${name}: typeof import('simple-ui')['${toCapitalCase(name)}']`)
           .join(',\n')}
       }
     }

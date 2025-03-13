@@ -23,7 +23,7 @@ pnpm run bootstrap:icons
 
 ## 2. 新增 md
 
-您还需要在 docs/projects/panda-ui/cdn 中增加您的分类，该目录下每个文件夹为一个大类，如果您不是新增一个大类，那么不需要进行此步
+您还需要在 docs/projects/simple-ui/cdn 中增加您的分类，该目录下每个文件夹为一个大类，如果您不是新增一个大类，那么不需要进行此步
 
 如果要新增一个大类图标，需要创建`type.md`文件，并将 `markdown` 中的 `title` 改为大类名称
 

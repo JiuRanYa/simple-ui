@@ -18,7 +18,7 @@ export function useLocale<T extends LocaleNames>(name?: T, customLocale?: MaybeR
   return computed(() => locale.value?.[name] ?? {})
 }
 
-export const localeContext = Symbol('_panda-ui-provoded-locale')
+export const localeContext = Symbol('_simple-ui-provoded-locale')
 export const globalLocale = computed(() => zhCNLocale())
 
 export function configLocale(locale: MaybeRef<LocaleOptions>, app: App) {

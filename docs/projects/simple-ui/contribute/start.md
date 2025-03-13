@@ -35,4 +35,4 @@ pnpm serve:docs
 pnpm serve
 ```
 
-如果需要新增`components`，请查看[开发命令](/projects/panda-ui/contribute/server)
+如果需要新增`components`，请查看[开发命令](/projects/simple-ui/contribute/server)
