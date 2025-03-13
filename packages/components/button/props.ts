@@ -1,6 +1,6 @@
 import type { PropType } from 'vue'
-import type { ComponentSize } from '@panda-ui/common/index'
-import { booleanProps, buildProps } from '@panda-ui/common/index'
+import type { ComponentSize } from '@simple-ui/common/index'
+import { booleanProps, buildProps } from '@simple-ui/common/index'
 
 export type ButtonType =
   | 'primary'

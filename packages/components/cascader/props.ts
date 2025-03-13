@@ -1,6 +1,6 @@
 import type { Placement } from '@floating-ui/dom'
-import type { ComponentSize } from '@panda-ui/common'
-import { booleanProps, booleanStringProps, buildProps, eventProp } from '@panda-ui/common'
+import type { ComponentSize } from '@simple-ui/common'
+import { booleanProps, booleanStringProps, buildProps, eventProp } from '@simple-ui/common'
 import type { PropType } from 'vue'
 import type { TriggerType } from '../tooltip/props'
 import type { CascaderKeyConfig, CascaderOption, CascaderOptionState, CascaderValue } from './symbol'

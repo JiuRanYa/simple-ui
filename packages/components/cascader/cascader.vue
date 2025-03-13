@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { triggerWhiteList, useProps } from '@panda-ui/common'
-import { ChevronDown, Xmark } from '@panda-ui/icons'
-import { useClickOutside, useNamespace } from '@panda-ui/hooks'
+import { triggerWhiteList, useProps } from '@simple-ui/common'
+import { ChevronDown, Xmark } from '@simple-ui/icons'
+import { useClickOutside, useNamespace } from '@simple-ui/hooks'
 import { Icon } from '../icon'
 import { Popper } from '../popper'
 import { cascaderProps } from './props'

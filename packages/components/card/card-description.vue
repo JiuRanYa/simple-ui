@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 
 defineOptions({
   name: 'CardDescription',

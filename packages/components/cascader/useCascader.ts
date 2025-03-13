@@ -12,8 +12,8 @@ import {
   watchEffect,
 } from 'vue'
 import type { Placement } from '@floating-ui/dom'
-import { useHover, usePopper } from '@panda-ui/hooks'
-import { emitEvent, flatTree, transformTree } from '@panda-ui/common'
+import { useHover, usePopper } from '@simple-ui/hooks'
+import { emitEvent, flatTree, transformTree } from '@simple-ui/common'
 import type { PopperExposed } from '../popper'
 import type { cascaderProps } from './props'
 import type { CascaderKeyConfig, CascaderOptionState, CascaderValue } from './symbol'

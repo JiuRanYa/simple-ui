@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useProps } from '@panda-ui/common'
-import { useNamespace } from '@panda-ui/hooks'
+import { useProps } from '@simple-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
 import { computed } from 'vue'
 import { buttonGroupProps } from './props'
 

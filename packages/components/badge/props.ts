@@ -1,3 +1,3 @@
-import { buildProps } from '@panda-ui/common'
+import { buildProps } from '@simple-ui/common'
 
 export const badgeProps = buildProps({})

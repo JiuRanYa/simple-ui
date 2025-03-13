@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
-import { useNamespace, useSetTimeout } from '@panda-ui/hooks'
+import { useNamespace, useSetTimeout } from '@simple-ui/hooks'
 import { ScrollArea } from '../scroll-area/index'
 import { Option } from '../option'
 import type { CascaderOptionState } from './symbol'

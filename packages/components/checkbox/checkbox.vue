@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import { computed, ref, useSlots, watch } from 'vue'
-import { emitEvent, useProps } from '@panda-ui/common'
+import { emitEvent, useProps } from '@simple-ui/common'
 import { checkboxProps } from './props'
 
 defineOptions({

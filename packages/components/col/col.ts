@@ -1,6 +1,6 @@
 import type { CSSProperties } from 'vue'
 import { computed, defineComponent, h, inject } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import { ROW_STATE } from '../row/symbol'
 import { colProps } from './props'
 

@@ -1,8 +1,8 @@
 <script lang="ts">
 import type { RendererElement } from 'vue'
 import { defineComponent } from 'vue'
-import { useProps } from '@panda-ui/common'
-import { useNamespace } from '@panda-ui/hooks'
+import { useProps } from '@simple-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
 import { collapseTransitionProps } from './props'
 
 export default defineComponent({
