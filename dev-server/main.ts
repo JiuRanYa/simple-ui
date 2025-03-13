@@ -1,8 +1,8 @@
 import { createApp, ref } from 'vue'
-import '@panda-ui/styles'
-import { install } from '@panda-ui/components'
+import '@simple-ui/styles'
+import { install } from '@simple-ui/components'
 import './style.scss'
-import { enUSLocale } from '@panda-ui/locale/lang/en-US'
+import { enUSLocale } from '@simple-ui/locale/lang/en-US'
 
 Promise.all([import(`./router/port-${__PORT__}.ts`), import('./App.vue')]).then(
   ([{ router }, { default: App }]) => {

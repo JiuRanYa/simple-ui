@@ -10,7 +10,7 @@
     "paths": {
       "@/*": ["./*"],
       "@docs/*": ["./*"],
-      "panda-ui": ["../packages"]
+      "simple-ui": ["../packages"]
     },
     "resolveJsonModule": true,
     "types": ["vite/client"],

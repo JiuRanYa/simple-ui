@@ -26,7 +26,7 @@ export default defineConfig(() => {
     optimizeDeps: {
       include: [
         '@panda-ui/icons',
-        ...Object.keys(pkg.dependencies).filter((dep: string) => !dep.includes('panda-ui')),
+        ...Object.keys(pkg.dependencies).filter((dep: string) => !dep.includes('simple-ui')),
       ],
     },
     build: {

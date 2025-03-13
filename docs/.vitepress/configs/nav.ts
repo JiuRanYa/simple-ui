@@ -3,21 +3,21 @@ export function getProjectLink(pro: string, link: string) {
 }
 
 export const navs: Record<string, any> = {
-  'panda-ui': [
+  'simple-ui': [
     {
-      link: getProjectLink('panda-ui', '/guide/design'),
+      link: getProjectLink('simple-ui', '/guide/design'),
       text: '指南',
     },
     {
-      link: getProjectLink('panda-ui', '/components/button'),
+      link: getProjectLink('simple-ui', '/components/button'),
       text: '组件',
     },
     {
-      link: getProjectLink('panda-ui', '/hooks/usePopper'),
+      link: getProjectLink('simple-ui', '/hooks/usePopper'),
       text: 'Hooks',
     },
     {
-      link: getProjectLink('panda-ui', '/contribute/start'),
+      link: getProjectLink('simple-ui', '/contribute/start'),
       text: '贡献',
     },
   ],

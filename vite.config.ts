@@ -5,11 +5,11 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJSX from '@vitejs/plugin-vue-jsx'
 import glob from 'fast-glob'
-import { blOutput, excludeFiles, pkgRoot } from '@panda-ui/internal'
+import { blOutput, excludeFiles, pkgRoot } from '@simple-ui/internal'
 import DefineOptions from 'unplugin-vue-define-options/vite'
 import dts from 'vite-plugin-dts'
 
-const outDir = 'dist/panda-ui/types'
+const outDir = 'dist/simple-ui/types'
 
 const pkg = JSON.parse(readFileSync(resolve(__dirname, 'package.json'), 'utf-8')) as Manifest
 
@@ -22,7 +22,7 @@ const external = (id: string) => externalPkgs.some(p => p === id || id.startsWit
 // https://vitejs.dev/config/
 export default defineConfig(async () => {
   const input = excludeFiles(
-    await glob('panda-ui/*.{js,ts,vue,tsx}', {
+    await glob('simple-ui/*.{js,ts,vue,tsx}', {
       cwd: pkgRoot,
       absolute: true,
       onlyFiles: true,
@@ -38,8 +38,8 @@ export default defineConfig(async () => {
       outDir: 'dist',
       sourcemap: true,
       lib: {
-        entry: resolve(pkgRoot, 'panda-ui'),
-        name: 'panda-ui',
+        entry: resolve(pkgRoot, 'simple-ui'),
+        name: 'simple-ui',
       },
       rollupOptions: {
         input,
@@ -48,7 +48,7 @@ export default defineConfig(async () => {
           {
             format: 'cjs',
             preserveModules: true,
-            preserveModulesRoot: resolve(pkgRoot, 'panda-ui'),
+            preserveModulesRoot: resolve(pkgRoot, 'simple-ui'),
             dir: resolve(blOutput, 'lib'),
             exports: 'named',
             entryFileNames: '[name].cjs',
@@ -57,7 +57,7 @@ export default defineConfig(async () => {
             format: 'es',
             exports: undefined,
             preserveModules: true,
-            preserveModulesRoot: resolve(pkgRoot, 'panda-ui'),
+            preserveModulesRoot: resolve(pkgRoot, 'simple-ui'),
             dir: resolve(blOutput, 'es'),
             entryFileNames: '[name].mjs',
           },
@@ -82,7 +82,7 @@ export default defineConfig(async () => {
         compilerOptions: {
           sourceMap: false,
           paths: {
-            'panda-ui': ['.'],
+            'simple-ui': ['.'],
             'vue-router': ['node_modules/vue-router'],
           },
           skipDiagnostics: false,

@@ -9,8 +9,8 @@ import { dest, parallel, series, src } from 'gulp'
 const { existsSync, mkdirSync, emptyDir } = fs
 
 const buildOutput = resolve(__dirname, 'dist')
-const distCssBundle = path.resolve(buildOutput, 'panda-ui/css')
-const cssDir = resolve(buildOutput, 'panda-ui/css')
+const distCssBundle = path.resolve(buildOutput, 'simple-ui/css')
+const cssDir = resolve(buildOutput, 'simple-ui/css')
 
 function buildStyle() {
   ensureEmptyDir(cssDir)
