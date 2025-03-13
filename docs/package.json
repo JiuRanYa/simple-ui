@@ -18,6 +18,7 @@
     "@simple-ui/components": "workspace:*",
     "@simple-ui/hooks": "workspace:*",
     "@simple-ui/internal": "workspace:*",
+    "@simple-ui/styles": "workspace:*",
     "markdown-it": "^13.0.1",
     "markdown-it-container": "^3.0.0",
     "sass": "^1.79.3",
