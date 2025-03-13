@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PanelGroup from "@panda-ui/components/panel-group/panel-group.vue";
+import PanelGroup from "@simple-ui/components/panel-group/panel-group.vue";
 </script>
 
 <template>

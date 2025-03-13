@@ -1,8 +1,8 @@
 <script lang="ts" setup>
-import { useEventListener, useNamespace } from '@panda-ui/hooks'
+import { useEventListener, useNamespace } from '@simple-ui/hooks'
 import { computed, ref, watch } from 'vue'
-import { useProps } from '@panda-ui/common'
-import { Icon } from '@panda-ui/components'
+import { useProps } from '@simple-ui/common'
+import { Icon } from '@simple-ui/components'
 import { switchProps } from './props'
 
 defineOptions({

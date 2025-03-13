@@ -39,7 +39,7 @@ async function main() {
   console.log(green('start generating types...'))
 
   const types = `
-    declare module '@panda-ui/icons' {
+    declare module '@simple-ui/icons' {
       import type {
         DefineComponent,
         ComponentOptionsMixin,

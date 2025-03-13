@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineComponent, onMounted, ref } from 'vue'
-import { ChevronDown, HouseChimneyWindow } from '@panda-ui/icons'
+import { ChevronDown, HouseChimneyWindow } from '@simple-ui/icons'
 import { useRouter } from 'vitepress'
 import { BL_PROJECT_STORAGE, supportProjects } from '@/.vitepress/vitepress/tookens'
 

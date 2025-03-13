@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineComponent, ref } from 'vue'
-import { BilibiliB, User, YoutubeB } from '@panda-ui/icons'
+import { BilibiliB, User, YoutubeB } from '@simple-ui/icons'
 import dayjs from 'dayjs'
 
 defineComponent({

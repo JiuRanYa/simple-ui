@@ -1,4 +1,4 @@
-import type { MaybeRef } from '@panda-ui/common'
+import type { MaybeRef } from '@simple-ui/common'
 import { computed, unref } from 'vue'
 
 // export const PROVIDED_NAMESPACE = '__bl-provided-namespace'

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { useFullScreen, useNamespace } from '@panda-ui/hooks'
-import { useZIndex } from '@panda-ui/common'
+import { useFullScreen, useNamespace } from '@simple-ui/hooks'
+import { useZIndex } from '@simple-ui/common'
 import { Portal } from '../portal'
 import type { FullScreenExposed, FullScreenType } from './types'
 

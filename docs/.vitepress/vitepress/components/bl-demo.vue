@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, defineComponent, ref } from 'vue'
-import { Code } from '@panda-ui/icons'
-import { CollapseTransition } from '@panda-ui/components'
+import { Code } from '@simple-ui/icons'
+import { CollapseTransition } from '@simple-ui/components'
 import SourceCode from './source-code.vue'
 
 const props = defineProps<{

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, inject, ref, watch } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
-import { InputNumber } from '@panda-ui/components'
-import { ensureArray } from '@panda-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
+import { InputNumber } from '@simple-ui/components'
+import { ensureArray } from '@simple-ui/common'
 import type { Operator } from '../types'
 import { FILTER_INJECTION_KEY, InputType } from '../types'
 import BasicFilterPanel from './basic-filter-panel.vue'

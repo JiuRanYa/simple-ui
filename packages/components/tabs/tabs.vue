@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { emitEvent, useProps } from '@panda-ui/common'
-import { useNamespace, useResizeObserver } from '@panda-ui/hooks'
-import { tabsContextKey } from '@panda-ui/tokens/tabs'
+import { emitEvent, useProps } from '@simple-ui/common'
+import { useNamespace, useResizeObserver } from '@simple-ui/hooks'
+import { tabsContextKey } from '@simple-ui/tokens/tabs'
 import { computed, nextTick, onMounted, provide, reactive, ref, watch } from 'vue'
 import { TabsList } from '../tabs-list'
 import type { TabsTriggerState } from '../tabs-trigger/props'

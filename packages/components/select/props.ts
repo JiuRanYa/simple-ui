@@ -1,14 +1,14 @@
 import type { Placement } from '@floating-ui/dom'
 import type {
   ComponentSize,
-} from '@panda-ui/common'
+} from '@simple-ui/common'
 import {
   booleanNumberProp,
   booleanProps,
   booleanStringProps,
   buildProps,
   eventProp,
-} from '@panda-ui/common'
+} from '@simple-ui/common'
 import type { PropType } from 'vue'
 import type { SelectOption } from '../option/props'
 import type { SelectRawOption, SelectValue } from './.symbol'

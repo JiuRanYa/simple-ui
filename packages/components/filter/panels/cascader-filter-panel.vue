@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, inject, reactive, ref, watch } from 'vue'
-import type { CascaderOptionState } from '@panda-ui/components'
-import { Cascader } from '@panda-ui/components'
+import type { CascaderOptionState } from '@simple-ui/components'
+import { Cascader } from '@simple-ui/components'
 import { FILTER_INJECTION_KEY, InputType } from '../types'
 import BasicFilterPanel from './basic-filter-panel.vue'
 

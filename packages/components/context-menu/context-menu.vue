@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, reactive, ref } from 'vue'
-import { useClickOutside, useNamespace } from '@panda-ui/hooks'
-import { emitEvent, useProps, useZIndex } from '@panda-ui/common'
+import { useClickOutside, useNamespace } from '@simple-ui/hooks'
+import { emitEvent, useProps, useZIndex } from '@simple-ui/common'
 import { Popper } from '../popper'
 import { contextMenuProps } from './props'
 

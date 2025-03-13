@@ -1,4 +1,4 @@
-import type { Meta } from '@panda-ui/components/date-picker/props'
+import type { Meta } from '@simple-ui/components/date-picker/props'
 import type { ComputedRef, InjectionKey } from 'vue'
 
 export interface DatePickerContext {

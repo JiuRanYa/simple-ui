@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { useHover } from "@panda-ui/hooks";
+import { useHover } from "@simple-ui/hooks";
 import { ref } from "vue";
 
 const wrapper = ref();

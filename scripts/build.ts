@@ -1,7 +1,7 @@
 import { copyFile } from 'node:fs/promises'
 import path from 'node:path'
 import minimist from 'minimist'
-import { blOutput, blPackage, projRoot } from '@panda-ui/internal'
+import { blOutput, blPackage, projRoot } from '@simple-ui/internal'
 import { logger, run } from './utils'
 
 const args = minimist<{

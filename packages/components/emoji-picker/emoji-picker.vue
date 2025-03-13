@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, ref, watch } from 'vue'
-import { emitEvent, useProps, useZIndex } from '@panda-ui/common'
-import { useNamespace } from '@panda-ui/hooks'
+import { emitEvent, useProps, useZIndex } from '@simple-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
 import {
   Baseball,
   CarSide,
@@ -11,7 +11,7 @@ import {
   Flag,
   MugHot,
   StarHalfStroke,
-} from '@panda-ui/icons'
+} from '@simple-ui/icons'
 import { Dropdown } from '../dropdown/index'
 import { Input } from '../input'
 import { Icon } from '../icon'

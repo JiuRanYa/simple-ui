@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { Emoji } from '@panda-ui/components/emoji-picker/props'
-import { FaceSmileWink } from '@panda-ui/icons'
+import type { Emoji } from '@simple-ui/components/emoji-picker/props'
+import { FaceSmileWink } from '@simple-ui/icons'
 import { ref, watch } from 'vue'
 
 const emoji = ref()

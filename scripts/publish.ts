@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import prompts from 'prompts'
 import type { Project } from '@pnpm/find-workspace-packages'
-import { projRoot } from '@panda-ui/internal'
+import { projRoot } from '@simple-ui/internal'
 import findWorkspacePackages from '@pnpm/find-workspace-packages'
 import { run } from './utils'
 

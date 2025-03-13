@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, inject, ref, watch } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
-import { CaretLeftM } from '@panda-ui/icons'
-import { Icon, Select } from '@panda-ui/components'
+import { useNamespace } from '@simple-ui/hooks'
+import { CaretLeftM } from '@simple-ui/icons'
+import { Icon, Select } from '@simple-ui/components'
 import { Category, ComponentConfig, FILTER_INJECTION_KEY, InputType } from '../types'
 import type { Operator, RuleDataVal } from '../types'
 import { basicFilterPanelProps } from '../props'

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { number, string } from 'yup'
-import type { RuleData, RuleOption } from '@panda-ui/components/filter/types'
-import { InputType, Category, LogicalOperator } from '@panda-ui/components/filter/types'
+import type { RuleData, RuleOption } from '@simple-ui/components/filter/types'
+import { InputType, Category, LogicalOperator } from '@simple-ui/components/filter/types'
 
 const ruleData = ref<RuleData>({
   category: Category.LOGIGAL,

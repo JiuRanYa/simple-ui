@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Cat, Flag, Moon, Sun } from '@panda-ui/icons'
+import { Cat, Flag, Moon, Sun } from '@simple-ui/icons'
 </script>
 
 <template>

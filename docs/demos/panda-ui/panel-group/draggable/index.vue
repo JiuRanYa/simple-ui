@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import PanelGroup from '@panda-ui/components/panel-group/panel-group.vue';
-import Panel from '@panda-ui/components/panel/panel.vue';
-import PanelResizeHandle from '@panda-ui/components/panel-resize-handle/panel-resize-handle.vue';
+import PanelGroup from '@simple-ui/components/panel-group/panel-group.vue';
+import Panel from '@simple-ui/components/panel/panel.vue';
+import PanelResizeHandle from '@simple-ui/components/panel-resize-handle/panel-resize-handle.vue';
 import { ref } from 'vue'
 
 

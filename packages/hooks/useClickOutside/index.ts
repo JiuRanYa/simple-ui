@@ -1,7 +1,7 @@
 import { getCurrentScope, onScopeDispose, ref, unref } from 'vue'
 import type { Ref } from 'vue'
-import type { MaybeElementRef } from '@panda-ui/common'
-import { isClient } from '@panda-ui/common'
+import type { MaybeElementRef } from '@simple-ui/common'
+import { isClient } from '@simple-ui/common'
 import { useEventListener } from '../useEventListener'
 
 type Fn = () => void

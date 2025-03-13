@@ -1,5 +1,5 @@
-import type { ComponentSize, EditType } from '@panda-ui/common'
-import { buildProps, eventProp, localeProp } from '@panda-ui/common'
+import type { ComponentSize, EditType } from '@simple-ui/common'
+import { buildProps, eventProp, localeProp } from '@simple-ui/common'
 import type { ExtractPropTypes, PropType } from 'vue'
 import type { emojiPickerProps } from '../emoji-picker/props'
 

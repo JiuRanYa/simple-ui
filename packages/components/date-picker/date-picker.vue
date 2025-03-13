@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { useClickOutside, useNamespace, usePopper } from '@panda-ui/hooks'
+import { useClickOutside, useNamespace, usePopper } from '@simple-ui/hooks'
 import { computed, provide, reactive, ref, toRef, watch } from 'vue'
-import type { PopperExposed } from '@panda-ui/components'
-import { Popper } from '@panda-ui/components'
+import type { PopperExposed } from '@simple-ui/components'
+import { Popper } from '@simple-ui/components'
 import type {
   Dateable,
-} from '@panda-ui/common'
+} from '@simple-ui/common'
 import {
   emitEvent,
   isString,
@@ -13,7 +13,7 @@ import {
   useIcons,
   useProps,
   useZIndex,
-} from '@panda-ui/common'
+} from '@simple-ui/common'
 import type { Dayjs } from 'dayjs'
 import dayjs from 'dayjs'
 import customParseFormat from 'dayjs/plugin/customParseFormat.js'

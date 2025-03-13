@@ -1,4 +1,4 @@
-import { buildProps } from '@panda-ui/common'
+import { buildProps } from '@simple-ui/common'
 import type { PropType } from 'vue'
 import { dropdownProps } from '../dropdown/props'
 

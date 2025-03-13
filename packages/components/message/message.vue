@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useNamespace, useSetTimeout } from '@panda-ui/hooks'
+import { useNamespace, useSetTimeout } from '@simple-ui/hooks'
 import { computed, nextTick, onMounted, ref } from 'vue'
-import { useProps, useZIndex } from '@panda-ui/common'
+import { useProps, useZIndex } from '@simple-ui/common'
 import { Icon } from '../icon'
 import { Renderer } from '../renderer'
 import { defaultProps, messageProps } from './props'

@@ -1,5 +1,5 @@
 import type { Side } from '@floating-ui/dom'
-import { booleanProps, buildProps, eventProp } from '@panda-ui/common'
+import { booleanProps, buildProps, eventProp } from '@simple-ui/common'
 import type { PropType } from 'vue'
 
 export const sheetProps = buildProps({

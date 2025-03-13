@@ -1,6 +1,6 @@
 import type { PropType } from 'vue'
 
-import { booleanProps, buildProps, eventProp } from '@panda-ui/common'
+import { booleanProps, buildProps, eventProp } from '@simple-ui/common'
 import { popperProps } from '../popper/props'
 import { iconProp } from '../icon/props'
 import type { Labels, TimeType } from './symbol'

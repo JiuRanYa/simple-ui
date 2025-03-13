@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import { computed, inject, nextTick, onMounted, ref, watch } from 'vue'
-import { useProps } from '@panda-ui/common'
+import { useProps } from '@simple-ui/common'
 import { useUniqueId } from '../panel-group/utils'
 import { panelGroupKey } from '../panel-group/token'
 import type { PanelData } from './types'

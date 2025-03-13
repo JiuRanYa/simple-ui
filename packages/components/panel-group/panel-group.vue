@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, inject, nextTick, provide } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
-import { useProps } from '@panda-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
+import { useProps } from '@simple-ui/common'
 import { panelGroupKey } from './token'
 import { panelGroupProps } from './props'
 import { useSplit } from './useSplit'

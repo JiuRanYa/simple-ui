@@ -171,4 +171,4 @@ export * from './tag'
 export * from './time-picker'
 export * from './tooltip'
 
-export * from '@panda-ui/locale'
+export * from '@simple-ui/locale'

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Message } from '@panda-ui/components'
+import { Message } from '@simple-ui/components'
 import { h } from 'vue'
 
 function openMessage() {

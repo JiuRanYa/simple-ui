@@ -1,6 +1,6 @@
 import type { App, ComputedRef, MaybeRef } from 'vue'
 import { computed, inject, unref } from 'vue'
-import { zhCNLocale } from '@panda-ui/locale/lang/zh-CN'
+import { zhCNLocale } from '@simple-ui/locale/lang/zh-CN'
 import type { LocaleNames, LocaleOptions } from './types'
 
 export function useLocale(): ComputedRef<LocaleOptions>

@@ -1,6 +1,6 @@
 import type { ExtractPropTypes, InjectionKey, Ref } from 'vue'
 
-import type { IconName } from '@panda-ui/common'
+import type { IconName } from '@simple-ui/common'
 import type { filterProps } from './props'
 
 export enum InputType {

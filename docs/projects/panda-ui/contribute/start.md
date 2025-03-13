@@ -13,7 +13,7 @@ pnpm -v
 
 ## 准备工作
 
-`Panda UI` 使用了内置的 `@panda-ui/icons`，并且在`internal` 目录下使用了`unbuild` 编译`node` 代码，
+`Panda UI` 使用了内置的 `@simple-ui/icons`，并且在`internal` 目录下使用了`unbuild` 编译`node` 代码，
 
 所以在启动项目前，你应该编译这俩个包
 

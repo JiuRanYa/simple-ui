@@ -10,8 +10,8 @@ import {
   ref,
   watch,
 } from 'vue'
-import { useResizeObserver } from '@panda-ui/hooks'
-import { emitEvent } from '@panda-ui/common'
+import { useResizeObserver } from '@simple-ui/hooks'
+import { emitEvent } from '@simple-ui/common'
 import type { ScrollDirection, scrollAreaProps } from './props'
 import { ALIGN_MAP } from './utils'
 

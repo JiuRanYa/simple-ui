@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useNamespace, useTimerRecord } from '@panda-ui/hooks'
+import { useNamespace, useTimerRecord } from '@simple-ui/hooks'
 import {
   boundValueInRange,
   emitEvent,
@@ -11,9 +11,9 @@ import {
   toNumber,
   useProps,
   warnWithPrefix,
-} from '@panda-ui/common'
-import { debounce, throttle } from '@panda-ui/utils'
-import { Minus, Plus } from '@panda-ui/icons'
+} from '@simple-ui/common'
+import { debounce, throttle } from '@simple-ui/utils'
+import { Minus, Plus } from '@simple-ui/icons'
 import { computed, reactive, ref, watch } from 'vue'
 import { Icon } from '../icon'
 

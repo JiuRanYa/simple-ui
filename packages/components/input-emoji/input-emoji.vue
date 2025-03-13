@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { EmojiPicker, Icon, Message } from '@panda-ui/components'
-import { emitEvent, useLocale, useProps } from '@panda-ui/common'
-import { useClickOutside, useNamespace } from '@panda-ui/hooks'
-import { Copy, X } from '@panda-ui/icons'
+import { EmojiPicker, Icon, Message } from '@simple-ui/components'
+import { emitEvent, useLocale, useProps } from '@simple-ui/common'
+import { useClickOutside, useNamespace } from '@simple-ui/hooks'
+import { Copy, X } from '@simple-ui/icons'
 import { computed, defineProps, nextTick, ref, toRef, watch } from 'vue'
-import type { Emoji } from '@panda-ui/components/emoji-picker/props'
+import type { Emoji } from '@simple-ui/components/emoji-picker/props'
 import { emojiRegex } from './regex'
 import { inputEmojiProps } from './props'
 

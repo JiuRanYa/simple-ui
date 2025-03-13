@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, provide } from 'vue'
-import { useProps } from '@panda-ui/common'
-import { useNamespace } from '@panda-ui/hooks'
-import { scrollAreaKey } from '@panda-ui/tokens/scroll-area'
+import { useProps } from '@simple-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
+import { scrollAreaKey } from '@simple-ui/tokens/scroll-area'
 import type { ScrollAreaInstance } from './props'
 import { scrollAreaProps } from './props'
 import { useScroll } from './useScroll'

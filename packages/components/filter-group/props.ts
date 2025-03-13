@@ -1,4 +1,4 @@
-import { booleanProps, buildProps } from '@panda-ui/common'
+import { booleanProps, buildProps } from '@simple-ui/common'
 import type { PropType } from 'vue'
 import type { RuleData, RuleOption } from './types'
 

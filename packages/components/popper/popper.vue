@@ -1,7 +1,7 @@
 <script lang="ts">
-import { useProps, useZIndex } from '@panda-ui/common'
+import { useProps, useZIndex } from '@simple-ui/common'
 import { computed, defineComponent, ref } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import { Portal } from '../portal'
 import { popperProps } from './props'
 

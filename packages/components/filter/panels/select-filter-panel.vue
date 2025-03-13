@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, inject, ref, watch } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
-import type { SelectOption } from '@panda-ui/components'
-import { Select } from '@panda-ui/components'
+import { useNamespace } from '@simple-ui/hooks'
+import type { SelectOption } from '@simple-ui/components'
+import { Select } from '@simple-ui/components'
 import { FILTER_INJECTION_KEY, InputType } from '../types'
 import type { Choice } from '../types'
 import BasicFilterPanel from './basic-filter-panel.vue'

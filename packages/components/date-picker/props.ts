@@ -1,6 +1,6 @@
 import type { PropType } from 'vue'
-import type { ComponentSize, Dateable, Placement } from '@panda-ui/common'
-import { buildProps, eventProp } from '@panda-ui/common'
+import type { ComponentSize, Dateable, Placement } from '@simple-ui/common'
+import { buildProps, eventProp } from '@simple-ui/common'
 import type { Dayjs } from 'dayjs'
 import type { TimeType } from '../time-picker/symbol'
 import { datePickerSharedProps } from './shared'

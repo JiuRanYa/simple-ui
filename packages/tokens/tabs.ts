@@ -1,5 +1,5 @@
-import type { TabsTriggerState } from '@panda-ui/components/tabs-trigger/props'
-import type { TabTriggerEmitState } from '@panda-ui/components/tabs/props'
+import type { TabsTriggerState } from '@simple-ui/components/tabs-trigger/props'
+import type { TabTriggerEmitState } from '@simple-ui/components/tabs/props'
 import type { InjectionKey } from 'vue'
 
 export interface TabsContext {

@@ -2,7 +2,7 @@
 import type { PropType } from 'vue'
 import { ref, watch } from 'vue'
 
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 
 import type { TimeState } from './symbol'
 import TimeColumn from './time-column.vue'

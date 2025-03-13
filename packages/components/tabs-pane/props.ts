@@ -1,4 +1,4 @@
-import { buildProps } from '@panda-ui/common'
+import { buildProps } from '@simple-ui/common'
 
 export const tabsPaneProps = buildProps({
   value: String,

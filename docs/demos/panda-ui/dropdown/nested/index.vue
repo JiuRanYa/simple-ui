@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { AngleRight } from '@panda-ui/icons'
+import { AngleRight } from '@simple-ui/icons'
 </script>
 
 <template>

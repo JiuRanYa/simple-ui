@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { defineComponent, shallowRef } from 'vue'
 import { useRoute } from 'vitepress'
-import { Message } from '@panda-ui/components'
-import { toCapitalCase } from '@panda-ui/common'
+import { Message } from '@simple-ui/components'
+import { toCapitalCase } from '@simple-ui/common'
 import iconMap from '@/iconCategory.json'
 
 const iconCategory = shallowRef<any>(iconMap)

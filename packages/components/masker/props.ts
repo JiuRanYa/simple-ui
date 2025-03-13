@@ -1,4 +1,4 @@
-import { booleanProps, booleanStringProps, buildProps, eventProp } from '@panda-ui/common'
+import { booleanProps, booleanStringProps, buildProps, eventProp } from '@simple-ui/common'
 
 export const maskerProps = buildProps({
   active: booleanProps,

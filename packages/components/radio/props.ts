@@ -1,4 +1,4 @@
-import { booleanProps, buildProps, valueProp } from '@panda-ui/common'
+import { booleanProps, buildProps, valueProp } from '@simple-ui/common'
 
 export const radioCommonProps = {
   value: valueProp,

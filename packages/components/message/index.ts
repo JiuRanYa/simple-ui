@@ -1,4 +1,4 @@
-import { withInstallFunction } from '@panda-ui/common/utils/vue/install'
+import { withInstallFunction } from '@simple-ui/common/utils/vue/install'
 
 import MessageCom from './method'
 

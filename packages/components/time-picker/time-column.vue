@@ -2,8 +2,8 @@
 import type { PropType } from 'vue'
 import { onMounted, ref, watch } from 'vue'
 
-import { useNamespace } from '@panda-ui/hooks'
-import { doubleDigits, range, toCapitalCase } from '@panda-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
+import { doubleDigits, range, toCapitalCase } from '@simple-ui/common'
 
 import { ScrollArea } from '../scroll-area'
 import type { TimeType } from './symbol'

@@ -1,8 +1,8 @@
 import type { CSSProperties } from 'vue'
 import { computed, defineComponent, h, renderSlot } from 'vue'
 
-import { toNumber, useProps } from '@panda-ui/common'
-import { useNamespace } from '@panda-ui/hooks'
+import { toNumber, useProps } from '@simple-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
 import { iconProps } from './props'
 
 import type { IconPresetEffect } from './props'

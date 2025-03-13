@@ -1,5 +1,5 @@
 import type { AppContext, ComponentPublicInstance, ExtractPropTypes } from 'vue'
-import { CircleCheck, CircleExclamation, CircleInfo, CircleXmark } from '@panda-ui/icons'
+import { CircleCheck, CircleExclamation, CircleInfo, CircleXmark } from '@simple-ui/icons'
 import type { MessagePlacement, messageProps } from './props'
 import type { MessageHandler } from './method'
 

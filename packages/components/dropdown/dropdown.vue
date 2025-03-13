@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { Placement, StyleType } from '@panda-ui/common'
-import { useProps, useZIndex } from '@panda-ui/common'
-import type { PopperExposed } from '@panda-ui/components'
-import { Popper } from '@panda-ui/components'
-import { useClickOutside, useNamespace, usePopper, useSetTimeout } from '@panda-ui/hooks'
+import type { Placement, StyleType } from '@simple-ui/common'
+import { useProps, useZIndex } from '@simple-ui/common'
+import type { PopperExposed } from '@simple-ui/components'
+import { Popper } from '@simple-ui/components'
+import { useClickOutside, useNamespace, usePopper, useSetTimeout } from '@simple-ui/hooks'
 import { computed, inject, nextTick, onMounted, provide, reactive, ref, watch } from 'vue'
-import { DROPDOWN_STATE } from '@panda-ui/tokens/dropdown'
+import { DROPDOWN_STATE } from '@simple-ui/tokens/dropdown'
 import { dropdownProps } from './props'
 
 defineOptions({

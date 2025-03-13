@@ -1,5 +1,5 @@
-import type { MaybeRef } from '@panda-ui/common'
-import { noop } from '@panda-ui/common'
+import type { MaybeRef } from '@simple-ui/common'
+import { noop } from '@simple-ui/common'
 import { getCurrentScope, onScopeDispose, unref, watch } from 'vue'
 
 export function useEventListener<E = Event>(

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, ref, watch } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
-import { emitEvent, useProps, useZIndex } from '@panda-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
+import { emitEvent, useProps, useZIndex } from '@simple-ui/common'
 import { Portal } from '../portal'
 import { maskerProps } from './props'
 

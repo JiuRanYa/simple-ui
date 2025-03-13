@@ -1,6 +1,6 @@
 import type { CSSProperties, ExtractPropTypes, Ref } from 'vue'
 import { nextTick, reactive, ref, watch } from 'vue'
-import { warnWithPrefix } from '@panda-ui/common'
+import { warnWithPrefix } from '@simple-ui/common'
 import type { PanelConstraints, PanelData } from '../panel/types'
 import type { panelGroupProps } from './props'
 import type { PanelGroupStates } from './panel-group-states'

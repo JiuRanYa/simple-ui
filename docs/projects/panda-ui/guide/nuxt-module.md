@@ -6,22 +6,22 @@ lang: en-US
 
 ## 使用方式
 
-如果您想要在Nuxt项目中使用`Panda UI`，可以使用`@panda-ui/nuxt`模块快速集成到你的项目里
+如果您想要在Nuxt项目中使用`Panda UI`，可以使用`@simple-ui/nuxt`模块快速集成到你的项目里
 
 ```shell
 # Using pnpm
-pnpm i -D @panda-ui/nuxt
+pnpm i -D @simple-ui/nuxt
 
 # Using yarn
-yarn add -D @panda-ui/nuxt
+yarn add -D @simple-ui/nuxt
 ```
 
-在您的`nuxt.config.js`中添加`@panda-ui/nuxt`
+在您的`nuxt.config.js`中添加`@simple-ui/nuxt`
 
 ```typescript
 export default defineNuxtConfig({
   modules: [
-    '@panda-ui/nuxt'
+    '@simple-ui/nuxt'
   ],
   PandaUI: {
     // Your module options
@@ -97,7 +97,7 @@ export interface ModuleOptions {
    */
   prefix: string
   /**
-   * Resolve icon components from '@panda-ui/icons'
+   * Resolve icon components from '@simple-ui/icons'
    *
    * @default true
    */

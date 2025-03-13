@@ -1,4 +1,4 @@
-import { getBase64BySrc, isFunction, isNumber, toCapitalCase } from '@panda-ui/common'
+import { getBase64BySrc, isFunction, isNumber, toCapitalCase } from '@simple-ui/common'
 
 interface StopConfig {
   fin?: boolean

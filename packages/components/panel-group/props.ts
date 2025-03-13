@@ -1,4 +1,4 @@
-import { booleanProps, buildProps, eventProp } from '@panda-ui/common'
+import { booleanProps, buildProps, eventProp } from '@simple-ui/common'
 import type { ExtractPropTypes, PropType } from 'vue'
 import type { PanelDirection, PanelGroupStates } from './types'
 

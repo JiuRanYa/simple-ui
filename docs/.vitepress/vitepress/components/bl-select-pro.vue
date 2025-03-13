@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useRouter } from 'vitepress'
-import CardTitle from '@panda-ui/components/card/card-title.vue'
-import { ArrowPointer } from '@panda-ui/icons'
+import CardTitle from '@simple-ui/components/card/card-title.vue'
+import { ArrowPointer } from '@simple-ui/icons'
 import CardStack from './card-stack.vue'
 import vFuzzy from './fuzzy'
 import { SUPPORT_PROJECTS } from '@/.vitepress/configs/projects'

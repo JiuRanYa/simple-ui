@@ -13,7 +13,7 @@ const demos = import.meta.glob('../../../demos/panda-ui/cdn/*/*.vue')
 
 :::info
 
-点击图标复制`名称`后，直接从`@panda-ui/icons`引入
+点击图标复制`名称`后，直接从`@simple-ui/icons`引入
 
 :::
 

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, defineComponent, onMounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vitepress'
-import { Moon, Sun } from '@panda-ui/icons'
+import { Moon, Sun } from '@simple-ui/icons'
 import { useNav } from '../composables/index'
 import { BL_PROJECT_STORAGE } from '../tookens'
 import { SUPPORT_PROJECTS } from '@/.vitepress/configs/projects'

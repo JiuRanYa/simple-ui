@@ -26,7 +26,7 @@ $ pnpm install panda-ui
 ```shell
 
 # 组件
-$ pnpm install @panda-ui/components
+$ pnpm install @simple-ui/components
 
 # Hooks
 $ pnpm install panda-ui/hooks

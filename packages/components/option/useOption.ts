@@ -1,6 +1,6 @@
 import type { ExtractPropTypes } from 'vue'
 import { computed, inject, reactive, toRaw, toRefs } from 'vue'
-import { selectKey } from '@panda-ui/tokens/select'
+import { selectKey } from '@simple-ui/tokens/select'
 import type { optionProps } from './props'
 
 export function useOption(props: ExtractPropTypes<typeof optionProps>) {

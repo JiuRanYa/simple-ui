@@ -1,4 +1,4 @@
-import { booleanProps, buildProps } from '@panda-ui/common'
+import { booleanProps, buildProps } from '@simple-ui/common'
 
 export const tabsTriggerProps = buildProps({
   value: String,

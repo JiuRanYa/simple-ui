@@ -1,7 +1,7 @@
-import { useNamespace } from '@panda-ui/hooks'
-import { emitEvent, isNull, useLocale, useProps } from '@panda-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
+import { emitEvent, isNull, useLocale, useProps } from '@simple-ui/common'
 import { computed, defineComponent, ref, toRef, watch } from 'vue'
-import { debounce, throttle } from '@panda-ui/utils'
+import { debounce, throttle } from '@simple-ui/utils'
 import { inputProps } from './props'
 
 export default defineComponent({

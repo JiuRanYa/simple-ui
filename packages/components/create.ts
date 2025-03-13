@@ -1,9 +1,9 @@
 import type { App } from 'vue'
-import type { IconsOptions, MaybeRef } from '@panda-ui/common'
-import { configIcons, configProps, configZIndex, isNumber, toCapitalCase } from '@panda-ui/common'
-import { configLocale } from '@panda-ui/common/config/locale'
-import type { LocaleOptions } from '@panda-ui/common/config/locale/types'
-import { defaultLocale } from '@panda-ui/locale'
+import type { IconsOptions, MaybeRef } from '@simple-ui/common'
+import { configIcons, configProps, configZIndex, isNumber, toCapitalCase } from '@simple-ui/common'
+import { configLocale } from '@simple-ui/common/config/locale'
+import type { LocaleOptions } from '@simple-ui/common/config/locale/types'
+import { defaultLocale } from '@simple-ui/locale'
 import type { PropsOptions } from './props'
 
 export interface InstallConfig {

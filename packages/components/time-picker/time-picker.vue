@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed, reactive, ref, watch } from 'vue'
 
-import { TIME_REG, boundValueInRange, createIconProp, doubleDigits, emitEvent, useIcons, useProps, useZIndex } from '@panda-ui/common'
-import { useClickOutside, useNamespace, usePopper, useSetTimeout } from '@panda-ui/hooks'
+import { TIME_REG, boundValueInRange, createIconProp, doubleDigits, emitEvent, useIcons, useProps, useZIndex } from '@simple-ui/common'
+import { useClickOutside, useNamespace, usePopper, useSetTimeout } from '@simple-ui/hooks'
 
 import { Button } from '../button'
 import { Popper } from '../popper'

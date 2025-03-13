@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Side } from '@panda-ui/common'
+import type { Side } from '@simple-ui/common'
 import { ref } from 'vue'
 
 defineOptions({

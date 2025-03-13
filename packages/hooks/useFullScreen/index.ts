@@ -1,4 +1,4 @@
-import { isClient, noop } from '@panda-ui/common'
+import { isClient, noop } from '@simple-ui/common'
 import { computed, getCurrentScope, onScopeDispose, ref } from 'vue'
 
 import type { Ref } from 'vue'

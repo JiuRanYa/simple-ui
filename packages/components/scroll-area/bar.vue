@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { PropType } from 'vue'
 import { computed, inject, ref } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
-import { scrollAreaKey } from '@panda-ui/tokens/scroll-area'
+import { useNamespace } from '@simple-ui/hooks'
+import { scrollAreaKey } from '@simple-ui/tokens/scroll-area'
 import type { ScrollAreaMode } from './props'
 
 defineOptions({

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useNamespace } from '@panda-ui/hooks'
-import { useProps } from '@panda-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
+import { useProps } from '@simple-ui/common'
 import { computed, inject, ref, watch } from 'vue'
 import { radioProps } from './props'
 import { RADIO_GROUP_INJECTION_KEY } from './symbol'

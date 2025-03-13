@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useProps } from '@panda-ui/common'
+import { useProps } from '@simple-ui/common'
 import { computed } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import { tagProps } from './props'
 
 defineOptions({

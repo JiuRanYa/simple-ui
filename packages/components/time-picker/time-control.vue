@@ -2,8 +2,8 @@
 import type { PropType } from 'vue'
 import { computed, ref } from 'vue'
 
-import { useNamespace } from '@panda-ui/hooks'
-import { doubleDigits } from '@panda-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
+import { doubleDigits } from '@simple-ui/common'
 import type { Labels, TimeType } from './symbol'
 import { handleKeyEnter } from './helper'
 

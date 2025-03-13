@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { RuleData, RuleOption } from '@panda-ui/components/filter/types'
-import { InputType } from '@panda-ui/components/filter/types'
+import type { RuleData, RuleOption } from '@simple-ui/components/filter/types'
+import { InputType } from '@simple-ui/components/filter/types'
 
 const ruleData = ref<RuleData>()
 

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
-import { Icon } from '@panda-ui/components'
-import { AngleRight, Check } from '@panda-ui/icons'
-import { useProps } from '@panda-ui/common'
+import { useNamespace } from '@simple-ui/hooks'
+import { Icon } from '@simple-ui/components'
+import { AngleRight, Check } from '@simple-ui/icons'
+import { useProps } from '@simple-ui/common'
 import { optionProps } from './props'
 
 const _props = defineProps(optionProps)

@@ -1,6 +1,6 @@
-import { buildProps } from '@panda-ui/common/props'
-import type { ComponentSize } from '@panda-ui/common'
-import { booleanProps, eventProp, localeProp } from '@panda-ui/common'
+import { buildProps } from '@simple-ui/common/props'
+import type { ComponentSize } from '@simple-ui/common'
+import { booleanProps, eventProp, localeProp } from '@simple-ui/common'
 import type { PropType } from 'vue'
 
 export type InputType = 'default' | 'secondary'

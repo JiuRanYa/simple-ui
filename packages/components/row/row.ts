@@ -1,5 +1,5 @@
 import { computed, defineComponent, h, provide, reactive, toRef } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import { rowProps } from './props'
 import { ROW_STATE } from './symbol'
 

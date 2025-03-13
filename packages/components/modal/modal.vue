@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { emitEvent, useProps } from '@panda-ui/common'
+import { emitEvent, useProps } from '@simple-ui/common'
 import { computed, reactive, ref, watch } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import { Masker } from '../masker'
 import { modalProps } from './props'
 

@@ -1,6 +1,6 @@
 import type { Placement } from '@floating-ui/dom'
-import { emitEvent, isNull } from '@panda-ui/common'
-import { useHover, usePopper } from '@panda-ui/hooks'
+import { emitEvent, isNull } from '@simple-ui/common'
+import { useHover, usePopper } from '@simple-ui/hooks'
 import type {
   ExtractPropTypes,
 } from 'vue'

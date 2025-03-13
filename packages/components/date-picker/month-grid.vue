@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useProps } from '@panda-ui/common'
+import { useProps } from '@simple-ui/common'
 import { computed, inject, ref } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import dayjs from 'dayjs'
 import dayOfYear from 'dayjs/plugin/dayOfYear.js'
 import isBetween from 'dayjs/plugin/isBetween.js'

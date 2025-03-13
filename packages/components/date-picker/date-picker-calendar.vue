@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useEventListener, useNamespace } from '@panda-ui/hooks'
+import { useEventListener, useNamespace } from '@simple-ui/hooks'
 import { computed, inject, nextTick, onMounted, ref } from 'vue'
-import { useProps } from '@panda-ui/common'
+import { useProps } from '@simple-ui/common'
 import dayjs from 'dayjs'
 import { calendarProps } from './props'
 import MonthGrid from './month-grid.vue'

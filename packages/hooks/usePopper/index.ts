@@ -2,7 +2,7 @@ import type { Ref } from 'vue'
 import { computed, onMounted, ref, shallowRef, unref, watchEffect } from 'vue'
 import { computePosition, flip, hide } from '@floating-ui/dom'
 import type { Middleware, Placement, VirtualElement } from '@floating-ui/dom'
-import { isClient } from '@panda-ui/common'
+import { isClient } from '@simple-ui/common'
 
 interface UsePopperOptions {
   /*

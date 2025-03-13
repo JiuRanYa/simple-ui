@@ -6,7 +6,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "paths": {
-      "@panda-ui/*": ["../common/*/src"]
+      "@simple-ui/*": ["../common/*/src"]
     },
     "resolveJsonModule": true,
     "types": ["vite/client"],

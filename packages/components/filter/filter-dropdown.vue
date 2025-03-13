@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed, inject, ref, watch, watchEffect } from 'vue'
-import { Icon, Input, ScrollArea } from '@panda-ui/components'
-import { useNamespace } from '@panda-ui/hooks'
-import { CaretLeftM, CustomSegmentsM } from '@panda-ui/icons'
-import { useIcons } from '@panda-ui/common'
+import { Icon, Input, ScrollArea } from '@simple-ui/components'
+import { useNamespace } from '@simple-ui/hooks'
+import { CaretLeftM, CustomSegmentsM } from '@simple-ui/icons'
+import { useIcons } from '@simple-ui/common'
 import { ComponentConfig, FILTER_INJECTION_KEY, InputType } from './types'
 import {
   BooleanFilterPanel,

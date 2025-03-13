@@ -1,5 +1,5 @@
-import type { Side } from '@panda-ui/common'
-import { buildProps, eventProp } from '@panda-ui/common'
+import type { Side } from '@simple-ui/common'
+import { buildProps, eventProp } from '@simple-ui/common'
 import type { PropType } from 'vue'
 
 export interface TabTriggerEmitState {

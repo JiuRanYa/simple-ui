@@ -1,5 +1,5 @@
-import type { Placement } from '@panda-ui/common'
-import { booleanProps, booleanStringProps, buildProps } from '@panda-ui/common'
+import type { Placement } from '@simple-ui/common'
+import { booleanProps, booleanStringProps, buildProps } from '@simple-ui/common'
 import type { PropType } from 'vue'
 
 export type TriggerType = 'click' | 'hover'

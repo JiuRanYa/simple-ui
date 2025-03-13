@@ -36,7 +36,7 @@ async function main() {
 
     ${allComponents.map(component => `export * from './${component}'`).join('\n')}
 
-    export * from '@panda-ui/locale'
+    export * from '@simple-ui/locale'
   `
 
   const hooksIndex = `

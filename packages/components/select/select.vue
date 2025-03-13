@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { computed, provide, reactive, watch } from 'vue'
-import { useProps } from '@panda-ui/common'
-import { useClickOutside, useNamespace } from '@panda-ui/hooks'
-import { ChevronDown, Xmark } from '@panda-ui/icons'
-import { selectKey } from '@panda-ui/tokens/select'
+import { useProps } from '@simple-ui/common'
+import { useClickOutside, useNamespace } from '@simple-ui/hooks'
+import { ChevronDown, Xmark } from '@simple-ui/icons'
+import { selectKey } from '@simple-ui/tokens/select'
 import { Popper } from '../popper'
 import { Option } from '../option'
 import { Icon } from '../icon'

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { User } from '@panda-ui/icons'
+import { User } from '@simple-ui/icons'
 </script>
 
 <template>

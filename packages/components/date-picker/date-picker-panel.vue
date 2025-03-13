@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import { computed, inject, reactive, ref, watch } from 'vue'
-import { Button } from '@panda-ui/components'
+import { Button } from '@simple-ui/components'
 import dayjs from 'dayjs'
 import Input from '../input/input'
 import TimePanel from '../time-picker/time-panel.vue'

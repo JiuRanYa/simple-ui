@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useNamespace } from '@panda-ui/hooks'
+import { useNamespace } from '@simple-ui/hooks'
 import { computed, inject, nextTick, onMounted, ref } from 'vue'
-import { useProps } from '@panda-ui/common/props'
-import { tabsContextKey } from '@panda-ui/tokens/tabs'
+import { useProps } from '@simple-ui/common/props'
+import { tabsContextKey } from '@simple-ui/tokens/tabs'
 import { tabsTriggerProps } from './props'
 
 defineOptions({

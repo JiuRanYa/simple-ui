@@ -1,4 +1,4 @@
-import { isClient } from '@panda-ui/common'
+import { isClient } from '@simple-ui/common'
 import { ResizeObserver } from '@juggle/resize-observer'
 
 export type ResizeHandler = (entry: ResizeObserverEntry) => any

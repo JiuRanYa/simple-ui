@@ -1,5 +1,5 @@
-import type { Mutable } from '@panda-ui/common'
-import { isClient, isString } from '@panda-ui/common'
+import type { Mutable } from '@simple-ui/common'
+import { isClient, isString } from '@simple-ui/common'
 import type { AppContext, ComponentInternalInstance, VNode } from 'vue'
 import { createVNode, render } from 'vue'
 import type { FuzzyOptions, Message, MessageFn, MessageProps } from './symbol'

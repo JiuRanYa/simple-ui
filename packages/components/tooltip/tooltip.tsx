@@ -8,14 +8,14 @@ import {
   toRef,
   watch,
 } from 'vue'
-import { placementWhiteList, triggerWhiteList, useProps } from '@panda-ui/common'
+import { placementWhiteList, triggerWhiteList, useProps } from '@simple-ui/common'
 import {
   useClickOutside,
   useEventListener,
   useNamespace,
   usePopper,
   useSetTimeout,
-} from '@panda-ui/hooks'
+} from '@simple-ui/hooks'
 import type { PopperExposed } from '../popper/index'
 import { Popper } from '../popper/index'
 import { toolTipProps } from './props'

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { CopyM, Trash } from '@panda-ui/icons'
+import { CopyM, Trash } from '@simple-ui/icons'
 
 const value = ref<string>('copy/clear slot')
 

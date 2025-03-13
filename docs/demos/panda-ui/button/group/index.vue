@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { FaceGrinBeamR, FaceSurpriseR, MoonR, SunR } from '@panda-ui/icons'
+import { FaceGrinBeamR, FaceSurpriseR, MoonR, SunR } from '@simple-ui/icons'
 </script>
 
 <template>

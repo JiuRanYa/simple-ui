@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useClickOutside } from "@panda-ui/hooks";
+import { useClickOutside } from "@simple-ui/hooks";
 import { ref } from "vue";
 
 const target = ref(null);

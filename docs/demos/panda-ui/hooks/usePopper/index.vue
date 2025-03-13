@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { usePopper } from "@panda-ui/hooks";
+import { usePopper } from "@simple-ui/hooks";
 import { ref, computed } from "vue";
 
 const popper = ref();

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { emitEvent, useProps } from '@panda-ui/common'
+import { emitEvent, useProps } from '@simple-ui/common'
 import { computed, ref, watch } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
-import { Xmark } from '@panda-ui/icons'
+import { useNamespace } from '@simple-ui/hooks'
+import { Xmark } from '@simple-ui/icons'
 import { Icon } from '../icon'
 import { Masker } from '../masker'
 import { sheetProps } from './props'

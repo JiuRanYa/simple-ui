@@ -1,6 +1,6 @@
 import type { SetupContext } from 'vue'
 import { ref } from 'vue'
-import { emitEvent } from '@panda-ui/common'
+import { emitEvent } from '@simple-ui/common'
 import type { FilterProps, RuleData, RuleDataVal, RuleOption, filterEmits } from './types'
 import { Category, LogicalOperator } from './types'
 

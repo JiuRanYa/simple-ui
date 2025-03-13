@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue'
-import { emitEvent, isObject, useProps } from '@panda-ui/common'
-import { Filter, Icon } from '@panda-ui/components'
-import { useNamespace } from '@panda-ui/hooks'
-import { CustomM, Plus, TrashcanM } from '@panda-ui/icons'
+import { emitEvent, isObject, useProps } from '@simple-ui/common'
+import { Filter, Icon } from '@simple-ui/components'
+import { useNamespace } from '@simple-ui/hooks'
+import { CustomM, Plus, TrashcanM } from '@simple-ui/icons'
 import { filterGroupProps } from './props'
 import { Category, InputType, LogicalOperator } from './types'
 import type { FilterGroupItem, RuleData, RuleDataVal, RuleOption } from './types'

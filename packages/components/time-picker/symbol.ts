@@ -1,4 +1,4 @@
-import type { MaybeRef } from '@panda-ui/common'
+import type { MaybeRef } from '@simple-ui/common'
 import type { InjectionKey } from 'vue'
 
 export type TimeType = 'hour' | 'minute' | 'second'

@@ -1,5 +1,5 @@
 import type { PropType } from 'vue'
-import { booleanProps, buildProps } from '@panda-ui/common'
+import { booleanProps, buildProps } from '@simple-ui/common'
 
 export interface ContextMenuParam {
   x: number

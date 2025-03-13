@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, inject, ref, watch } from 'vue'
-import { useNamespace } from '@panda-ui/hooks'
-import { Checkbox, ScrollArea } from '@panda-ui/components'
+import { useNamespace } from '@simple-ui/hooks'
+import { Checkbox, ScrollArea } from '@simple-ui/components'
 import { FILTER_INJECTION_KEY, InputType } from '../types'
 import type { Choice } from '../types'
 import BasicFilterPanel from './basic-filter-panel.vue'
