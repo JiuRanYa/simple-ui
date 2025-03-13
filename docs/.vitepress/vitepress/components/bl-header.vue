@@ -42,10 +42,6 @@ const components = computed(() => {
     .filter(i => i.text.toLowerCase().includes(inputSearchKey.value.toLowerCase()))
 })
 
-const router = useRouter()
-function switchProject() {
-  router.go('/projects/select-pro/')
-}
 function isActive(routePath: string, link: string) {
   const routeTop = routePath?.split('/').slice(1, 4).pop()
   const linkTop = link?.split('/').slice(1, 4).pop()
@@ -180,11 +176,6 @@ onMounted(() => {
           class="theme-switch switchAppearance"
           @click="switchTheme"
         />
-        <img
-          :src="currentProject?.icon"
-          style="margin-inline-start: 24px; height: 25px; cursor: pointer"
-          @click="switchProject"
-        >
       </div>
     </div>
   </div>

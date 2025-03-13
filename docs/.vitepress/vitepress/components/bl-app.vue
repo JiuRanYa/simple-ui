@@ -48,9 +48,9 @@ onMounted(() => {
       localStorage.setItem(localStorageProName, defaultPro)
   }
   else {
-    localStorage.setItem(localStorageProName, 'select-pro')
+    localStorage.setItem(localStorageProName, 'simple-ui')
 
-    router.go(`/projects/select-pro/`)
+    router.go(`/projects/simple-ui/`)
   }
 })
 </script>
