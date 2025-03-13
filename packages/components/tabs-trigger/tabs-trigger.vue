@@ -2,7 +2,7 @@
 import { useNamespace } from '@simple-ui/hooks'
 import { computed, inject, nextTick, onMounted, ref } from 'vue'
 import { useProps } from '@simple-ui/common/props'
-import { tabsContextKey } from '@simple-ui/tokens/tabs'
+import { tabsContextKey } from '../tabs/token'
 import { tabsTriggerProps } from './props'
 
 defineOptions({

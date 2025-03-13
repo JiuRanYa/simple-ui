@@ -2,7 +2,7 @@
 import type { PropType } from 'vue'
 import { computed, inject, ref } from 'vue'
 import { useNamespace } from '@simple-ui/hooks'
-import { scrollAreaKey } from '@simple-ui/tokens/scroll-area'
+import { scrollAreaKey } from './token'
 import type { ScrollAreaMode } from './props'
 
 defineOptions({

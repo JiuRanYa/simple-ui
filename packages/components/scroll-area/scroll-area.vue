@@ -2,7 +2,7 @@
 import { computed, provide } from 'vue'
 import { useProps } from '@simple-ui/common'
 import { useNamespace } from '@simple-ui/hooks'
-import { scrollAreaKey } from '@simple-ui/tokens/scroll-area'
+import { scrollAreaKey } from './token'
 import type { ScrollAreaInstance } from './props'
 import { scrollAreaProps } from './props'
 import { useScroll } from './useScroll'

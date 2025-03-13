@@ -2,7 +2,7 @@
 import { useNamespace } from '@simple-ui/hooks'
 import { computed, inject } from 'vue'
 import { useProps } from '@simple-ui/common'
-import { tabsContextKey } from '@simple-ui/tokens/tabs'
+import { tabsContextKey } from '../tabs/token'
 import { tabsPaneProps } from './props'
 
 defineOptions({

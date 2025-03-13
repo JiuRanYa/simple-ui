@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { emitEvent, useProps } from '@simple-ui/common'
 import { useNamespace, useResizeObserver } from '@simple-ui/hooks'
-import { tabsContextKey } from '@simple-ui/tokens/tabs'
 import { computed, nextTick, onMounted, provide, reactive, ref, watch } from 'vue'
 import { TabsList } from '../tabs-list'
 import type { TabsTriggerState } from '../tabs-trigger/props'
 import type { TabTriggerEmitState } from './props'
 import { tabsProps } from './props'
+import { tabsContextKey } from './token'
 
 defineOptions({
   name: 'Tabs',

@@ -5,7 +5,7 @@ import type { PopperExposed } from '@simple-ui/components'
 import { Popper } from '@simple-ui/components'
 import { useClickOutside, useNamespace, usePopper, useSetTimeout } from '@simple-ui/hooks'
 import { computed, inject, nextTick, onMounted, provide, reactive, ref, watch } from 'vue'
-import { DROPDOWN_STATE } from '@simple-ui/tokens/dropdown'
+import { DROPDOWN_STATE } from './token'
 import { dropdownProps } from './props'
 
 defineOptions({
