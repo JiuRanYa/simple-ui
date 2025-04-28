@@ -1,5 +1,5 @@
 import { computed } from 'vue'
-import type { LocaleConfig } from '@simple-ui/common'
+import type { LocaleConfig } from '@panda-ui/common'
 import { zhCNLocale } from './lang/zh-CN'
 
 export const defaultLocale = computed(() => zhCNLocale())

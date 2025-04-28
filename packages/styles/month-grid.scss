@@ -60,11 +60,11 @@ $month-grid: map.merge((), $month-grid);
         transition: color 0.2s;
         position: relative;
 
-        &[aria-label]:not([aria-label='']):hover {
+        &[aria-label]:not([aria-label='']):not(.disabled):hover {
           cursor: default;
         }
 
-        &[aria-label]:not([aria-label=''], .end, .start):hover {
+        &[aria-label]:not([aria-label=''], .end, .start):not(.disabled):not(.today):hover {
           &::before {
             content: '';
             position: absolute;
@@ -83,8 +83,13 @@ $month-grid: map.merge((), $month-grid);
           align-items: center;
         }
       }
-      td.today:not(.selected):not(.in-range):not(.start):not(.end) {
+      td.today:not(.selected):not(.in-range):not(.start):not(.end):not(.disabled) {
         animation: border-flash 1.4s infinite;
+        border: 2px solid get-css-var(color-primary-base);
+      }
+      td.disabled {
+        color: get-css-var(content-color-disabled);
+        cursor: not-allowed;
       }
       td.selected {
         color: get-css-var(content-color-reverse);
@@ -103,6 +108,12 @@ $month-grid: map.merge((), $month-grid);
           inset: -2px -2px;
           border-top-left-radius: 50%;
           border-bottom-left-radius: 50%;
+        }
+      }
+      td.in-range:last-child {
+        &::before {
+          content: '';
+          background-color: transparent;
         }
       }
       td.in-range + .end {
@@ -143,6 +154,18 @@ $month-grid: map.merge((), $month-grid);
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
         }
+      }
+      td.is-dynamic {
+        background-color: transparent !important;
+        border: 2px solid transparent;
+        color: unset;
+      }
+
+      td.start.end.is-dynamic {
+        background-color: get-css-var(color-secondary-base) !important;
+        border: 2px solid get-css-var(color-primary-base) !important;
+        background-color: get-css-var(color-primary-base) !important;
+        color: get-css-var(content-color-reverse) !important;
       }
     }
   }

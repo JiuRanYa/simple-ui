@@ -307,6 +307,10 @@ $filter: map.merge((height: 400px),
 
       .#{$namespace}-radio-group--vertical {
         gap: 16px;
+
+        .#{$namespace}-radio__label {
+          font-size: get-css-var(font-size-base);
+        }
       }
     }
 

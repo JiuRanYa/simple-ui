@@ -15,7 +15,8 @@ $bg-color-map: () !default;
 $bg-color-map: map.merge(
   (
     base: rgb(255, 255, 255),
-    reverse: #131719
+    reverse: #131719,
+    black:#131719
   ),
   $bg-color-map
 );
@@ -74,6 +75,7 @@ $color-map: map.deep-merge(
       base: hsl(get-css-var(hsl-color-primary-base)),
 			hover: hsl(get-css-var(hsl-color-primary-base) / .8),
       text: #005fdb,
+      highlight: #ff4d4f,
 			foreground: hsl(0 0% 98%),
       bg: rgba(79, 68, 224, 0.06)
     ),

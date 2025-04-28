@@ -84,4 +84,8 @@ $option: map.merge(
     align-items: center;
     flex: 1;
   }
+
+  &__highlight {
+    color: get-css-var('color-primary-highlight');
+  }
 }

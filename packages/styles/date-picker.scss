@@ -7,7 +7,7 @@ $date-picker: () !default;
 $date-picker: map.merge(
   (
     header-font-size: 12px,
-    panel-width: 300px,
+    panel-width: 320px,
     panel-border: get-css-var('border-base'),
     panel-shadow: 0px 0px 50px 0px get-css-var('shadow-color-light-3'),
     panel-bg-color: get-css-var('bg-color-base'),
@@ -30,6 +30,7 @@ $date-picker: map.merge(
     border: get-css-var(border-shape) get-css-var(border-color-light-1);
     border-radius: 12px;
     background: var(--bl-date-picker-panel-bg-color);
+    overflow: hidden;
   }
 
   &__panels {
@@ -75,21 +76,12 @@ $date-picker: map.merge(
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 100;
     border-bottom: 2px get-css-var('border-style') get-css-var('border-color-light-3');
     font-size: get-css-var(date-picker-header-font-size);
+
     &--day {
       text-align: center;
-    }
-  }
-
-  &__typing {
-    width: var(--bl-date-picker-panel-width);
-    padding: 22px;
-    display: flex;
-    justify-content: space-between;
-    .bl-input {
-      max-width: calc(46%);
-      flex: 1;
     }
   }
 
@@ -111,6 +103,95 @@ $date-picker: map.merge(
       position: absolute;
       width: 100%;
       box-sizing: border-box;
+    }
+  }
+
+  &__type {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f8fa;
+    padding: 0 get-css-var(padding-lg);
+    width: get-css-var(date-picker-panel-width);
+
+    &--option {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      padding: get-css-var(padding-sm) 0;
+      color: get-css-var(color-primary-hover);
+
+      &:hover {
+        color: get-css-var(color-primary-base);
+      }
+    }
+    &--active {
+      position: relative;
+      font-weight: 500;
+
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+      }
+    }
+
+  }
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: get-css-var(padding-sm) get-css-var(padding-lg);
+    width: get-css-var(date-picker-panel-width);
+
+    .bl-input-number {
+      border: get-css-var(border-shape) transparent;
+      background: get-css-var(fill-color-background);
+      min-width: 0;
+      flex: 1;
+      width: unset;
+
+      &:hover {
+        border: get-css-var(border-shape) get-css-var(color-primary-base);
+      }
+    }
+
+    .bl-select {
+      width: unset;
+      flex: 1;
+    }
+    
+    .bl-select__selector {
+      background-color: get-css-var(fill-color-background);
+      transition: get-css-var(transition-base);
+
+      &:hover {
+        border: get-css-var(border-shape) get-css-var(color-primary-base);
+      }
+    }
+
+    input:not(.bl-input-number__input) {
+      height: get-css-var(input-height-middle);
+      border: none;
+      min-width: 0;
+      flex: 1;
+      background-color: get-css-var(fill-color-background);
+      border-radius: 4px;
+      outline: none;
+      padding: 0 get-css-var(padding-sm);
+      border: get-css-var(border-shape) transparent;
+      transition: get-css-var(transition-base);
+
+      &:hover {
+        border: get-css-var(border-shape) get-css-var(color-primary-base);
+      }
     }
   }
 }

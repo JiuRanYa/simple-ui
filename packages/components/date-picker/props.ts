@@ -13,8 +13,8 @@ export interface OriginDate {
   minute: number
   second: number
 }
-export type DatePickerType = 'static' | 'range' | 'dateTime' | 'dateTimeRange'
-export type DatePickerTyping = 'fixed' | 'since' | 'last'
+export type DatePickerType = 'static' | 'range' | 'dateTime' | 'dateTimeRange' | 'dynamic'
+export type DatePickerDynamicType = 'fixed' | 'since' | 'last'
 export type DateTimeType = 'year' | 'month' | 'day' | TimeType
 
 export const datePickerPanelProps = buildProps({
@@ -26,13 +26,16 @@ export const datePickerProps = buildProps({
   placement: String as PropType<Placement>,
   transitionName: String || Function,
   presets: Object as PropType<Record<string, Dateable>>,
-  value: [Number, String, Date, Array, Object] as PropType<Dateable | Dateable[]>,
+  value: [Number, String, Date, Array, Object] as PropType<Dateable | Dateable[] | DatePickerDynamicValue>,
   valueFormat: String,
   format: String,
-  onChange: eventProp<(value: string | number | string[] | number[] | null) => void>(),
+  onChange: eventProp<(value: string | number | string[] | number[] | null | DatePickerDynamicValue) => void>(),
   to: String,
   timezone: String,
   size: String as PropType<ComponentSize>,
+  onShortcut: eventProp<(preset: string, value: Dateable | Dateable[]) => void>(),
+  locale: Object,
+  disabledDate: Array as PropType<Dateable[]>,
 })
 
 export const calendarProps = buildProps({
@@ -77,4 +80,16 @@ export interface DateMeta {
 
 export interface ExtraMeta {
   allocated: boolean
+}
+
+export interface DatePickerDynamicConfig {
+  startDate: number | string
+  endDate: number | string
+  digit: number
+  unit: string
+}
+
+export interface DatePickerDynamicValue {
+  type: DatePickerDynamicType
+  dynamicConfig: DatePickerDynamicConfig
 }

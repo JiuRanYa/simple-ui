@@ -66,13 +66,41 @@ date-picker/rangePresets
 
 :::
 
-## 支持输入
+## 动态日期
 
-可以使用`typing`属性对绑定的值进行格式化,可选值有`fixed`，`since`, `last`,
+:::warning
+
+开启动态日期后，组件抛出的值会发生变化，请注意适配
+
+:::
+
+可以通过`type`属性来设置动态日期，可选值有`fixed`，`since`, `last`,
 
 :::demo
 
-date-picker/typing
+date-picker/dynamic
+
+:::
+
+## 禁用日期
+
+可以通过`disabledDate`属性来禁用日期，可以是一个`Dateable`类型，也可以是一个`Dateable[]`类型
+
+当您想禁用某些日期范围时，您可以传入一个`Dateable[]`类型，例如：
+
+```ts
+const disabledDate = [dayjs('2021-01-01'), dayjs('2021-01-02')]
+```
+
+当您想禁用某些日期之后或者之前的日期时，您可以传入一个`Number.POSITIVE_INFINITY`类型，例如：
+
+```ts
+const disabledDate = [dayjs('2021-01-01'), Number.POSITIVE_INFINITY]
+```
+
+:::demo
+
+date-picker/disabled
 
 :::
 
@@ -120,16 +148,34 @@ date-picker/trigger
 
 | 名称           | 说明                                        | 类型                                           | 默认值   | 始于     |
 | -------------- | ------------------------------------------- | ---------------------------------------------- | -------- | -------- |
-| value          | 绑定的值                                    | `Dateable \| Dateable[]`                       | `null`   | -        |
+| value          | 绑定的值                                    | `Dateable \| Dateable[] \| DatePickerDynamicValue`                       | `null`   | -        |
 | presets        | 需要提供的预设值                            | `Record<string, Dateable>`                     | `{}`     | -        |
-| type           | 日期选择的类型，单选或者范围                | `static \| range \| dateTime \| dateTimeRange` | `static` | `v2.0.0` |
+| type           | 日期选择的类型，单选或者范围                | `static \| range \| dateTime \| dateTimeRange` \| `dynamic` | `static` | `v2.0.0` |
 | format         | 根据是否具有 Hms 来控制时间选择列的显示隐藏 | `string`                                       | `null`   | `v2.0.0` |
 | transitionName | 弹出面板的动画效果                          | `string`                                       | `drop`   | -        |
 | valueFormat    | 更新绑定值的格式                            | `string`                                       | `null`   | -        |
-| typing         | 是否可以输入                                | `string`                                       | `null`   | -        |
+| disabledDate   | 禁用日期                                    | `Dateable[]`                                   | `[]`     | -        |
 
 ## 事件
 
 | 名称     | 说明                  | 类型                       | 默认值 | 始于 |
 | -------- | --------------------- | -------------------------- | ------ | ---- |
 | onChange | modelValue 更新时触发 | `(Date \| Date[]) => void` | `null` | -    |
+| shortcut | 点击预设时触发 | `(preset: string, value: Dateable \| Dateable[]) => void` | `void` | - |
+
+## DatePicker补充类型
+
+```ts
+export interface DatePickerDynamicValue {
+  type: DatePickerDynamicType
+  dynamicConfig: {
+    startDate: string
+    endDate: string
+    digit: number
+    unit: DatePickerDynamicUnit
+  }
+}
+
+export type DatePickerDynamicType = 'fixed' | 'since' | 'last'
+export type DatePickerDynamicUnit = 'day' | 'month' | 'year'
+```

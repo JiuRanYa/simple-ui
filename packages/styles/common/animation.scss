@@ -3,14 +3,14 @@
 
 @keyframes border-flash {
   0% {
-    border: 2px solid transparent;
+    border-color: transparent;
     background: transparent;
   }
   50% {
-    border: 2px solid get-css-var(color-primary-base);
+    border-color: get-css-var(color-primary-base);
   }
   100% {
-    border: 2px solid transparent;
+    border-color: transparent;
     background: transparent;
   }
 }

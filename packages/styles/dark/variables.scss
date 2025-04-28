@@ -106,7 +106,7 @@ $content-color-map: map.merge(
 );
 
 $bg-color-map: () !default;
-$bg-color-map: map.merge((base: #1f2023, reverse: #fff), $bg-color-map);
+$bg-color-map: map.merge((base: #1f2023, reverse: #fff, black: #131719), $bg-color-map);
 
 $color-black: #fff !default;
 $color-white: #000 !default;

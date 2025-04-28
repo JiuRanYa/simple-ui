@@ -31,6 +31,22 @@ $cascader: map.merge(
 		@include define-preset-values('cascader', $cascader);
 	}
 
+	&__focused {
+		.#{$namespace}-cascader__label {
+			color: get-css-var(content-color-secondary);
+		}
+	}
+
+	&__empty {
+		padding: 8px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: auto;
+		color: get-css-var(content-color-disabled);
+	}
+
 	&--small {
 		@include define-preset-values('cascader',
 			(
@@ -86,6 +102,7 @@ $cascader: map.merge(
 	}
 
 	&__control {
+		position: relative;
 		flex: auto;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -119,7 +136,9 @@ $cascader: map.merge(
 	}
 
 	&__input {
-		height: 18px;
+		position: absolute;
+		inset: 0;
+		height: 100%;
 		display: inline-block;
 		border: none;
 		width: 100%;

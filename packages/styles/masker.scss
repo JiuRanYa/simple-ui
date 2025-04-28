@@ -44,7 +44,7 @@ $masker: map.merge(
 
 	&--reverse {
 		#{$self}__mask {
-			color: get-css-var(bg-color-reverse);
+			color: get-css-var(bg-color-black);
 		}
 	}
 }

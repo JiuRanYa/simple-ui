@@ -45,10 +45,12 @@ const weekDay = computed(() => {
 })
 // 该月需要渲染多少行
 const daysRowNum = computed(() => {
-  let res = Math.ceil(daysInMonth.value / 7)
-  if (weekDay.value === 0 || daysInMonth.value % 7 === 0)
-    res += 1
-  return res
+  // 当第一天是星期日时，weekDay为0，需要特殊处理为7
+  const firstDayPosition = weekDay.value === 0 ? 7 : weekDay.value
+  const lastDayPosition = firstDayPosition + daysInMonth.value - 1
+
+  // 直接除以7得到行数（向上取整）
+  return Math.ceil(lastDayPosition / 7)
 })
 const startDate = computed(() => {
   return new Date(rootValue.startMeta.dateMeta.year, rootValue.startMeta.dateMeta.month, rootValue.startMeta.dateMeta.day)
@@ -115,52 +117,6 @@ function sameDay(d1?: Date, d2?: Date) {
     && d1.getDate() === d2.getDate()
 }
 
-function handlePickDate(e: Event) {
-  const target = (e.target as HTMLElement).closest('td')
-
-  if (!target || target.tagName !== 'TD' || !target.ariaLabel)
-    return
-
-  const day = target.ariaLabel
-  const date = dayjs(`${props.value}-${day}`)
-
-  // 如果不是范围选择终止
-  if (!rootValue.isRange.value) {
-    rootValue?.startMeta.setDateMeta({
-      year: date.get('year'),
-      month: date.get('month'),
-      day: date.get('date'),
-    })
-
-    return
-  }
-
-  // 如果全部指派, 重置
-  if (startAllocated.value && endAllocated.value) {
-    rootValue.startMeta.extraMeta.allocated = false
-    rootValue.endMeta.extraMeta.allocated = false
-  }
-
-  // 分别指派开始时间和结束时间
-  if (!rootValue?.startMeta.extraMeta.allocated) {
-    rootValue?.startMeta.setDateMeta({
-      year: date.get('year'),
-      month: date.get('month'),
-      day: date.get('date'),
-    })
-    rootValue.startMeta.extraMeta.allocated = true
-
-    return
-  }
-  if (!rootValue?.endMeta.extraMeta.allocated) {
-    rootValue?.endMeta.setDateMeta({
-      year: date.get('year'),
-      month: date.get('month'),
-      day: date.get('date'),
-    })
-    rootValue.endMeta.extraMeta.allocated = true
-  }
-}
 function isInRange(date: DateCell['dateStr']) {
   return (
     startAllocated.value
@@ -198,7 +154,7 @@ function getCellClass(cell: DateCell, row: DateCell[], currentIdx: number) {
     return row.find(cell => isStartDate(cell.dateStr))
       && !cell.dateStr
       && row.every(cell => !start(cell)
-      && !isEndDate(cell.dateStr))
+        && !isEndDate(cell.dateStr))
   }
 
   return {
@@ -209,14 +165,23 @@ function getCellClass(cell: DateCell, row: DateCell[], currentIdx: number) {
     'in-range': isInRange(cell.dateStr),
     'is-end': isEndDate(cell.dateStr),
     'before-range': isBeforeStartRange(),
+    'disabled': computed(() => rootValue.isDisabledDate(cell.dateStr)).value,
+    'is-dynamic': end(cell) && rootValue.props.type === 'dynamic' && rootValue.dynamicType.value !== 'fixed',
   }
+}
+
+function registerClickHandler(e: Event) {
+  const target = (e.target as HTMLElement).closest('td')
+
+  if (target?.tagName === 'TD' && target.ariaLabel && !target.classList.contains('disabled'))
+    rootValue.handlePickDate(`${props.value}-${target.ariaLabel}`)
 }
 
 defineExpose({ tableRef })
 </script>
 
 <template>
-  <table ref="tableRef" :class="className" :aria-label="value" @click="handlePickDate">
+  <table ref="tableRef" :class="className" :aria-label="value" @click="registerClickHandler">
     <thead :class="ns.be('title')">
       {{
         monthTitle
