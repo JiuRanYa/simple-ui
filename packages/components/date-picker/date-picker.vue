@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useClickOutside, useNamespace, usePopper } from '@simple-ui/hooks'
-import { computed, provide, reactive, ref, toRaw, toRef, watch } from 'vue'
+import { computed, provide, reactive, ref, toRef, watch } from 'vue'
 import type { PopperExposed } from '@simple-ui/components'
 import type {
   Dateable,

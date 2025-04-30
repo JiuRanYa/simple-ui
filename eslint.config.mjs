@@ -13,6 +13,7 @@ export default antfu(
       'node/prefer-global/process': 'off',
       'ts/no-use-before-define': 'off',
       'vue/no-reserved-component-names': 'off',
+      'ts/no-unused-expressions': 'off',
     },
   },
   {
