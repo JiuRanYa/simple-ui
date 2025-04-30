@@ -52,7 +52,6 @@ const props = useProps('date-picker', _props, {
   type: 'static',
   valueFormat: '',
   format: 'YMD Hms',
-  typing: null,
   to: '',
   size: 'middle',
   locale: null,
